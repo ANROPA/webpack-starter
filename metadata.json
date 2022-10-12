@@ -1,0 +1,2919 @@
+{
+	"info": {
+		"_postman_id": "77a1db46-8a38-4be6-8bb7-a7bcd253d103",
+		"name": "Facturación Chile HCO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"CompanyDB\": \"CL_ISAUL_BERNAL\",\n    \"Password\": \"Yaba6ebr-sE&\",\n    \"UserName\": \"SCGSB1C\\\\anavarrete\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/Login",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDT Configuracióm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TableName\": \"SCGCE_CONF\",\r\n\t\"TableDescription\": \"CE - Comprante Electrónico\",\r\n\t\"TableType\": \"bott_MasterData\",\r\n\t\"Archivable\": \"tNO\",\r\n\t\"ArchiveDateField\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserTablesMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserTablesMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDT Lineas Configuración",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TableName\": \"SCGCE_CONFS\",\r\n\t\"TableDescription\": \"CE - Configuración de Series\",\r\n\t\"TableType\": \"bott_MasterDataLines\",\r\n\t\"Archivable\": \"tNO\",\r\n\t\"ArchiveDateField\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserTablesMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserTablesMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDT Lineas Actecos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TableName\": \"SCGCE_ACT\",\r\n\t\"TableDescription\": \"CE - Configuración de Actecos\",\r\n\t\"TableType\": \"bott_MasterDataLines\",\r\n\t\"Archivable\": \"tNO\",\r\n\t\"ArchiveDateField\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserTablesMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserTablesMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDT Encabezado Referencias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TableName\": \"SCGCE_ORFE\",\r\n    \"TableDescription\": \"CE - Referencias FE\",\r\n    \"TableType\": \"bott_Document\",\r\n    \"Archivable\": \"tNO\",\r\n    \"ArchiveDateField\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserTablesMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserTablesMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDT Lineas Referencias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TableName\": \"SCGCE_RFE1\",\r\n    \"TableDescription\": \"CE - Lineas Referencias FE\",\r\n    \"TableType\": \"bott_DocumentLines\",\r\n    \"Archivable\": \"tNO\",\r\n    \"ArchiveDateField\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserTablesMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserTablesMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Nombre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Nombre\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 80,\r\n         \"Description\": \"Nombre\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 0,\r\n         \"EditSize\": 80,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF TipoID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"TipoId\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 2,\r\n         \"Description\": \"Tipo Identificación\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 1,\r\n         \"EditSize\": 2,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF IdNum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"IdNum\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 12,\r\n         \"Description\": \"Número de Identificación\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 2,\r\n         \"EditSize\": 12,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF NomComer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"NomComer\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 80,\r\n         \"Description\": \"Nombre del comercio\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 3,\r\n         \"EditSize\": 80,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF NumSennas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"NumSennas\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 160,\r\n         \"Description\": \"Señas\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 8,\r\n         \"EditSize\": 160,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CodPaist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"CodPaist\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 3,\r\n         \"Description\": \"Código País Teléfono\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 9,\r\n         \"EditSize\": 3,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF NumTel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"NumTel\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Número telefónico\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 10,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CodPaisF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"CodPaisF\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Código País Fax\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 11,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF NumFax",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"NumFax\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Número Fax\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 12,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Email\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 60,\r\n         \"Description\": \"Email\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 13,\r\n         \"EditSize\": 60,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF GiroNegocio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"GiroNegocio\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 100,\r\n         \"Description\": \"Giro de Noegocio\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 16,\r\n         \"EditSize\": 100,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Comuna",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Comuna\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 50,\r\n         \"Description\": \"Comunidad\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 17,\r\n         \"EditSize\": 50,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Ciudad",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Ciudad\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 50,\r\n         \"Description\": \"Ciudad\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 18,\r\n         \"EditSize\": 50,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Acteco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Acteco\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 50,\r\n         \"Description\": \"Codigo de actividad\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 19,\r\n         \"EditSize\": 50,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Url\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 254,\r\n         \"Description\": \"Url Servicio Web\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 20,\r\n         \"EditSize\": 254,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF AutentUs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"AutentUs\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 1,\r\n         \"Description\": \"Autenticación Usuario\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 21,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Usuario\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 80,\r\n         \"Description\": \"Usuario\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 22,\r\n         \"EditSize\": 80,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Pass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Pass\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 80,\r\n         \"Description\": \"Contraseña\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONF\",\r\n         \"FieldID\": 23,\r\n         \"EditSize\": 80,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF IdSerS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"IdSerS\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 10,\r\n         \"Description\": \"Serie de SAP\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONFS\",\r\n         \"FieldID\": 0,\r\n         \"EditSize\": 10,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF TipDoc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"TipDoc\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 2,\r\n         \"Description\": \"Tipo de Documento\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONFS\",\r\n         \"FieldID\": 1,\r\n         \"EditSize\": 2,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Desc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Desc\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 60,\r\n         \"Description\": \"Descripcion\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_CONFS\",\r\n         \"FieldID\": 2,\r\n         \"EditSize\": 60,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Term",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Term\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 5,\r\n    \"Description\": \"Id Formulario\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 3,\r\n    \"EditSize\": 5,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF RenomPDF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"RenomPDF\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 1,\r\n            \"Description\": \"Renombrar PDF DTE\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": \"N\",\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 25,\r\n            \"EditSize\": 1,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": [\r\n                {\r\n                    \"Value\": \"Y\",\r\n                    \"Description\": \"Sí\"\r\n                },\r\n                {\r\n                    \"Value\": \"N\",\r\n                    \"Description\": \"No\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF NomUDFPDF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"NomUDFPDF\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 50,\r\n            \"Description\": \"Nombre UDF que se utilizar para renombrar el PDF de un DTE\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 26,\r\n            \"EditSize\": 50,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF RutaDTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"RutaDTE\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 254,\r\n            \"Description\": \"Folder donde se copian los archivos DTE\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 27,\r\n            \"EditSize\": 254,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF FolioRef",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"FolioRef\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 1,\r\n            \"Description\": \"Copiar No folio en referencia de documentos\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": \"N\",\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 28,\r\n            \"EditSize\": 1,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": [\r\n                {\r\n                    \"Value\": \"Y\",\r\n                    \"Description\": \"Sí\"\r\n                },\r\n                {\r\n                    \"Value\": \"N\",\r\n                    \"Description\": \"No\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF cedibles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"cedibles\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 1,\r\n            \"Description\": \"Copia cedibles\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": \"N\",\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 29,\r\n            \"EditSize\": 1,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": [\r\n                {\r\n                    \"Value\": \"Y\",\r\n                    \"Description\": \"Sí\"\r\n                },\r\n                {\r\n                    \"Value\": \"N\",\r\n                    \"Description\": \"No\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CopiasCed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"CopiasCed\",\r\n            \"Type\": \"db_Numeric\",\r\n            \"Size\": 11,\r\n            \"Description\": \"Cantidad de copias cedibles\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 30,\r\n            \"EditSize\": 10,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD?$filter=Name eq 'CopiasCed'",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "Name eq 'CopiasCed'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF BoletaTick",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"BoletaTick\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 1,\r\n            \"Description\": \"Imprimir boleta formato Ticket\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": \"N\",\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 31,\r\n            \"EditSize\": 1,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": [\r\n                {\r\n                    \"Value\": \"Y\",\r\n                    \"Description\": \"Sí\"\r\n                },\r\n                {\r\n                    \"Value\": \"N\",\r\n                    \"Description\": \"No\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CalculoLinea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"CalculoLinea\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 1,\r\n            \"Description\": \"Cálculo de la linea\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": \"P\",\r\n            \"TableName\": \"@SCGCE_CONF\",\r\n            \"FieldID\": 31,\r\n            \"EditSize\": 1,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": [\r\n                {\r\n                    \"Value\": \"M\",\r\n                    \"Description\": \"Monto Total\"\r\n                },\r\n                {\r\n                    \"Value\": \"P\",\r\n                    \"Description\": \"Porcentaje Descuento\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF Actecos lineas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"Acteco\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 50,\r\n         \"Description\": \"Codigo de actividad\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"@SCGCE_ACT\",\r\n         \"FieldID\": 0,\r\n         \"EditSize\": 50,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefTD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_RefTD\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 15,\r\n    \"Description\": \"Tipo documento ref\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_RFE1\",\r\n    \"FieldID\": 0,\r\n    \"EditSize\": 15,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"30\",\r\n            \"Description\": \"factura\"\r\n        },\r\n        {\r\n            \"Value\": \"32\",\r\n            \"Description\": \"factura de venta de bienes servicios no afectos o exentos de IVA\"\r\n        },\r\n        {\r\n            \"Value\": \"35\",\r\n            \"Description\": \"Boleta\"\r\n        },\r\n        {\r\n            \"Value\": \"38\",\r\n            \"Description\": \"Boleta exenta\"\r\n        },\r\n        {\r\n            \"Value\": \"45\",\r\n            \"Description\": \"factura de compra\"\r\n        },\r\n        {\r\n            \"Value\": \"55\",\r\n            \"Description\": \"nota de débito\"\r\n        },\r\n        {\r\n            \"Value\": \"60\",\r\n            \"Description\": \"nota de crédito\"\r\n        },\r\n        {\r\n            \"Value\": \"103\",\r\n            \"Description\": \"Liquidación\"\r\n        },\r\n        {\r\n            \"Value\": \"40\",\r\n            \"Description\": \"Liquidación Factura\"\r\n        },\r\n        {\r\n            \"Value\": \"43\",\r\n            \"Description\": \"Liquidación-Factura Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"33\",\r\n            \"Description\": \"Factura Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"34\",\r\n            \"Description\": \"Factura No Afecta o Exenta Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"39\",\r\n            \"Description\": \"Boleta Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"41\",\r\n            \"Description\": \"Boleta Exenta Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"46\",\r\n            \"Description\": \"Factura de Compra Electrónica.\"\r\n        },\r\n        {\r\n            \"Value\": \"56\",\r\n            \"Description\": \"Nota de Débito Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"61\",\r\n            \"Description\": \"Nota de Crédito Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"50 \",\r\n            \"Description\": \"Guía de Despacho.\"\r\n        },\r\n        {\r\n            \"Value\": \"52\",\r\n            \"Description\": \"Guía de Despacho Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"110\",\r\n            \"Description\": \"Factura de Exportación Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"111\",\r\n            \"Description\": \"Nota de Débito de Exportación Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"112\",\r\n            \"Description\": \"Nota de Crédito de Exportación Electrónica\"\r\n        },\r\n        {\r\n            \"Value\": \"801 \",\r\n            \"Description\": \"Orden de Compra\"\r\n        },\r\n        {\r\n            \"Value\": \"802\",\r\n            \"Description\": \"Nota de pedido\"\r\n        },\r\n        {\r\n            \"Value\": \"803\",\r\n            \"Description\": \"Contrato\"\r\n        },\r\n        {\r\n            \"Value\": \"804\",\r\n            \"Description\": \"Resolución\"\r\n        },\r\n        {\r\n            \"Value\": \"805\",\r\n            \"Description\": \"Proceso ChileCompra\"\r\n        },\r\n        {\r\n            \"Value\": \"806\",\r\n            \"Description\": \"Ficha ChileCompra\"\r\n        },\r\n        {\r\n            \"Value\": \"807\",\r\n            \"Description\": \"DUS\"\r\n        },\r\n        {\r\n            \"Value\": \"808\",\r\n            \"Description\": \"B/L (Conocimiento de embarque)\"\r\n        },\r\n        {\r\n            \"Value\": \"809\",\r\n            \"Description\": \"AWB (Air Will Bill)\"\r\n        },\r\n        {\r\n            \"Value\": \"810\",\r\n            \"Description\": \"MIC/DTA\"\r\n        },\r\n        {\r\n            \"Value\": \"811\",\r\n            \"Description\": \"Carta de Porte\"\r\n        },\r\n        {\r\n            \"Value\": \"812\",\r\n            \"Description\": \"Resolución del SNA donde califica Servicios de Exportación\"\r\n        },\r\n        {\r\n            \"Value\": \"813\",\r\n            \"Description\": \"Pasaporte\"\r\n        },\r\n        {\r\n            \"Value\": \"814\",\r\n            \"Description\": \"Certificado de Depósito Bolsa Prod. Chile.\"\r\n        },\r\n        {\r\n            \"Value\": \"815\",\r\n            \"Description\": \"Vale de Prenda Bolsa Prod. Chile\"\r\n        },\r\n        {\r\n            \"Value\": \"820\",\r\n            \"Description\": \"Código de Inscripción en el Registro de Acuerdos con Plazo de Pago Excepcional\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefNum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"SCGCE_RefNum\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 50,\r\n            \"Description\": \"Numero de referencia\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_RFE1\",\r\n            \"FieldID\": 1,\r\n            \"EditSize\": 50,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefFec",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"SCGCE_RefFec\",\r\n            \"Type\": \"db_Date\",\r\n            \"Size\": 8,\r\n            \"Description\": \"Fecha de Referencia\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_RFE1\",\r\n            \"FieldID\": 2,\r\n            \"EditSize\": 8,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefTip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"SCGCE_RefTip\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 2,\r\n            \"Description\": \"Tipo de Referencia\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_RFE1\",\r\n            \"FieldID\": 3,\r\n            \"EditSize\": 2,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": [\r\n                {\r\n                    \"Value\": \"1\",\r\n                    \"Description\": \"Anula Documento de referencia\"\r\n                },\r\n                {\r\n                    \"Value\": \"2\",\r\n                    \"Description\": \"Corrige texto documento de referencia\"\r\n                },\r\n                {\r\n                    \"Value\": \"3\",\r\n                    \"Description\": \"Corrige monto\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefRaz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"SCGCE_RefRaz\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 180,\r\n            \"Description\": \"Razón de Referencia\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_RFE1\",\r\n            \"FieldID\": 4,\r\n            \"EditSize\": 180,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_ObjType",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"SCGCE_ObjType\",\r\n            \"Type\": \"db_Alpha\",\r\n            \"Size\": 15,\r\n            \"Description\": \"ObjType\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_ORFE\",\r\n            \"FieldID\": 1,\r\n            \"EditSize\": 15,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_DocEntry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"Name\": \"SCGCE_DocEntry\",\r\n            \"Type\": \"db_Numeric\",\r\n            \"Size\": 11,\r\n            \"Description\": \"DocEntry\",\r\n            \"SubType\": \"st_None\",\r\n            \"LinkedTable\": null,\r\n            \"DefaultValue\": null,\r\n            \"TableName\": \"@SCGCE_ORFE\",\r\n            \"FieldID\": 0,\r\n            \"EditSize\": 11,\r\n            \"Mandatory\": \"tNO\",\r\n            \"LinkedUDO\": null,\r\n            \"LinkedSystemObject\": null,\r\n            \"ValidValuesMD\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_EstadoAut OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_EstadoAut\",\r\n         \"Type\": \"db_Numeric\",\r\n         \"Size\": 6,\r\n         \"Description\": \"Estado Documento\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": \"0\",\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 24,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"0\",\r\n               \"Description\": \"No Procesado\"\r\n            },\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"Procesado\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_Des OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_Des\",\r\n         \"Type\": \"db_Memo\",\r\n         \"Size\": 4,\r\n         \"Description\": \"Descripción\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 25,\r\n         \"EditSize\": 10,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_CondVent OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_CondVent\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Condición venta\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 2,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"Contado\"\r\n            },\r\n            {\r\n               \"Value\": \"2\",\r\n               \"Description\": \"Crédito\"\r\n            },\r\n            {\r\n               \"Value\": \"3\",\r\n               \"Description\": \"Sin Costo\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_CondVentExp OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_CondVentExp\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Condición venta exportación\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 25,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"COB1\"\r\n            },\r\n            {\r\n               \"Value\": \"2\",\r\n               \"Description\": \"COBRANZA\"\r\n            },\r\n            {\r\n               \"Value\": \"11\",\r\n               \"Description\": \"ACRED\"\r\n            },\r\n            {\r\n               \"Value\": \"12\",\r\n               \"Description\": \"CBOF\"\r\n            },\r\n            {\r\n               \"Value\": \"21\",\r\n               \"Description\": \"S/PAGO\"\r\n            },\r\n            {\r\n               \"Value\": \"32\",\r\n               \"Description\": \"ANTICIPO\"\r\n            },\r\n            {\r\n               \"Value\": \"50\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"51\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"52\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"53\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"54\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"55\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"56\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"57\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"58\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"59\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"60\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"61\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"62\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"63\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"64\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"65\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"66\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"67\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"68\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"69\",\r\n               \"Description\": \"ANT/CRED\"\r\n            },\r\n            {\r\n               \"Value\": \"70\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"71\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"72\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"73\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"74\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"75\",\r\n               \"Description\": \"ANT/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"80\",\r\n               \"Description\": \"S/PAGO/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"81\",\r\n               \"Description\": \"S/PAGO/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"82\",\r\n               \"Description\": \"S/PAGO/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"83\",\r\n               \"Description\": \"S/PAGO/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"84\",\r\n               \"Description\": \"S/PAGO/COB\"\r\n            },\r\n            {\r\n               \"Value\": \"85\",\r\n               \"Description\": \"S/PAGO/COB\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_IndServicio OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_IndServicio\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 1,\r\n    \"Description\": \"Indicador de Servicio\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 23,\r\n    \"EditSize\": 1,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"1\",\r\n            \"Description\": \"Factura de servicios periodicos domiciliarios\"\r\n        },\r\n        {\r\n            \"Value\": \"2\",\r\n            \"Description\": \"Factura de otros servicios periodicos\"\r\n        },\r\n        {\r\n            \"Value\": \"3\",\r\n            \"Description\": \"Factura de Servicios\"\r\n        },\r\n        {\r\n            \"Value\": \"4\",\r\n            \"Description\": \"Servicios de Hotelería\"\r\n        },\r\n        {\r\n            \"Value\": \"5\",\r\n            \"Description\": \"Servicios de Transporte Terrestre Internacional\"\r\n        },\r\n        {\r\n            \"Value\": \"6\",\r\n            \"Description\": \"Servicios Prestados y Utilizados Totalmente en el Extrangero\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefTD OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_RefTD\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 2,\r\n         \"Description\": \"Tipo Documento de Ref\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 10,\r\n         \"EditSize\": 2,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"33\",\r\n               \"Description\": \"Factura Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"34\",\r\n               \"Description\": \"Factura Exenta Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"39\",\r\n               \"Description\": \"Boleta Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"41\",\r\n               \"Description\": \"Boleta Exenta Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"56\",\r\n               \"Description\": \"Nota Débito Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"61\",\r\n               \"Description\": \"Nota Crédito Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"46\",\r\n               \"Description\": \"Factura Compra Electrónica\"\r\n            },\r\n            {\r\n               \"Value\": \"52\",\r\n               \"Description\": \"Guía de Despacho\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefNum OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_RefNum\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 50,\r\n         \"Description\": \"Número de Referencia\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 11,\r\n         \"EditSize\": 50,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefFec OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_RefFec\",\r\n         \"Type\": \"db_Date\",\r\n         \"Size\": 8,\r\n         \"Description\": \"Fecha de Referencia\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 12,\r\n         \"EditSize\": 8,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefTip OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_RefTip\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 2,\r\n         \"Description\": \"Tipo de Referencia\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 13,\r\n         \"EditSize\": 2,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"Anula documento de referencia\"\r\n            },\r\n            {\r\n               \"Value\": \"2\",\r\n               \"Description\": \"Corrige texto documento de referencia\"\r\n            },\r\n            {\r\n               \"Value\": \"3\",\r\n               \"Description\": \"Corrige monto\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RefRaz OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_RefRaz\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 180,\r\n         \"Description\": \"Razón de Referencia\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 14,\r\n         \"EditSize\": 180,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_NatDesc OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_NatDesc\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 80,\r\n         \"Description\": \"Naturaleza del descuento\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 9,\r\n         \"EditSize\": 80,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_MedPag1 OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_MedPag1\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Medio de pago 1\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 5,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"01\",\r\n               \"Description\": \"Efectivo\"\r\n            },\r\n            {\r\n               \"Value\": \"02\",\r\n               \"Description\": \"Tarjeta\"\r\n            },\r\n            {\r\n               \"Value\": \"03\",\r\n               \"Description\": \"Cheque\"\r\n            },\r\n            {\r\n               \"Value\": \"04\",\r\n               \"Description\": \"Transferencia - depósito bancario\"\r\n            },\r\n            {\r\n               \"Value\": \"05\",\r\n               \"Description\": \"Recaudado por terceros\"\r\n            },\r\n            {\r\n               \"Value\": \"99\",\r\n               \"Description\": \"Otros\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_MedPag2 OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_MedPag2\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Medio de pago 2\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 6,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"01\",\r\n               \"Description\": \"Efectivo\"\r\n            },\r\n            {\r\n               \"Value\": \"02\",\r\n               \"Description\": \"Tarjeta\"\r\n            },\r\n            {\r\n               \"Value\": \"03\",\r\n               \"Description\": \"Cheque\"\r\n            },\r\n            {\r\n               \"Value\": \"04\",\r\n               \"Description\": \"Transferencia - depósito bancario\"\r\n            },\r\n            {\r\n               \"Value\": \"05\",\r\n               \"Description\": \"Recaudado por terceros\"\r\n            },\r\n            {\r\n               \"Value\": \"99\",\r\n               \"Description\": \"Otros\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_MedPag3 OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_MedPag3\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Medio de pago 3\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 7,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"01\",\r\n               \"Description\": \"Efectivo\"\r\n            },\r\n            {\r\n               \"Value\": \"02\",\r\n               \"Description\": \"Tarjeta\"\r\n            },\r\n            {\r\n               \"Value\": \"03\",\r\n               \"Description\": \"Cheque\"\r\n            },\r\n            {\r\n               \"Value\": \"04\",\r\n               \"Description\": \"Transferencia - depósito bancario\"\r\n            },\r\n            {\r\n               \"Value\": \"05\",\r\n               \"Description\": \"Recaudado por terceros\"\r\n            },\r\n            {\r\n               \"Value\": \"99\",\r\n               \"Description\": \"Otros\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_MedPag4 OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_MedPag4\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 20,\r\n         \"Description\": \"Medio de pago 4\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 8,\r\n         \"EditSize\": 20,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"01\",\r\n               \"Description\": \"Efectivo\"\r\n            },\r\n            {\r\n               \"Value\": \"02\",\r\n               \"Description\": \"Tarjeta\"\r\n            },\r\n            {\r\n               \"Value\": \"03\",\r\n               \"Description\": \"Cheque\"\r\n            },\r\n            {\r\n               \"Value\": \"04\",\r\n               \"Description\": \"Transferencia - depósito bancario\"\r\n            },\r\n            {\r\n               \"Value\": \"05\",\r\n               \"Description\": \"Recaudado por terceros\"\r\n            },\r\n            {\r\n               \"Value\": \"99\",\r\n               \"Description\": \"Otros\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_ModVenta OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_ModVenta\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 1,\r\n    \"Description\": \"Modalidad Venta\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 28,\r\n    \"EditSize\": 1,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"1\",\r\n            \"Description\": \"A FIRME\"\r\n        },\r\n        {\r\n            \"Value\": \"2\",\r\n            \"Description\": \"BAJO CONDICIÓN\"\r\n        },\r\n        {\r\n            \"Value\": \"3\",\r\n            \"Description\": \"EN CONSIGNACIÓN LIBRE\"\r\n        },\r\n        {\r\n            \"Value\": \"4\",\r\n            \"Description\": \"EN CONSIGNACIÓN CON UN MÍNIMO A FIRME\"\r\n        },\r\n        {\r\n            \"Value\": \"9\",\r\n            \"Description\": \"SIN PAGO\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_TotBultos OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_TotBultos\",\r\n         \"Type\": \"db_Numeric\",\r\n         \"Size\": 6,\r\n         \"Description\": \"Total Bultos\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": \"0\",\r\n         \"TableName\": \"OINV\",\r\n         \"FieldID\": 27,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_PaisDestino OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_PaisDestino\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 10,\r\n    \"Description\": \"País Destino\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 29,\r\n    \"EditSize\": 10,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"101\",\r\n            \"Description\": \"SENEGAL\"\r\n        },\r\n        {\r\n            \"Value\": \"102\",\r\n            \"Description\": \"GAMBIA\"\r\n        },\r\n        {\r\n            \"Value\": \"103\",\r\n            \"Description\": \"GUINEA-BISSAU\"\r\n        },\r\n        {\r\n            \"Value\": \"104\",\r\n            \"Description\": \"GUINEA\"\r\n        },\r\n        {\r\n            \"Value\": \"105\",\r\n            \"Description\": \"SIERRA LEONA\"\r\n        },\r\n        {\r\n            \"Value\": \"106\",\r\n            \"Description\": \"LIBERIA\"\r\n        },\r\n        {\r\n            \"Value\": \"107\",\r\n            \"Description\": \"COSTA DE MARFIL\"\r\n        },\r\n        {\r\n            \"Value\": \"108\",\r\n            \"Description\": \"GHANA\"\r\n        },\r\n        {\r\n            \"Value\": \"109\",\r\n            \"Description\": \"TOGO\"\r\n        },\r\n        {\r\n            \"Value\": \"111\",\r\n            \"Description\": \"NIGERIA\"\r\n        },\r\n        {\r\n            \"Value\": \"112\",\r\n            \"Description\": \"SUDAFRICA\"\r\n        },\r\n        {\r\n            \"Value\": \"113\",\r\n            \"Description\": \"BOTSWANA\"\r\n        },\r\n        {\r\n            \"Value\": \"114\",\r\n            \"Description\": \"LESOTHO\"\r\n        },\r\n        {\r\n            \"Value\": \"115\",\r\n            \"Description\": \"MALAWI\"\r\n        },\r\n        {\r\n            \"Value\": \"116\",\r\n            \"Description\": \"ZIMBABWE\"\r\n        },\r\n        {\r\n            \"Value\": \"117\",\r\n            \"Description\": \"ZAMBIA\"\r\n        },\r\n        {\r\n            \"Value\": \"118\",\r\n            \"Description\": \"COMORAS\"\r\n        },\r\n        {\r\n            \"Value\": \"119\",\r\n            \"Description\": \"MAURICIO\"\r\n        },\r\n        {\r\n            \"Value\": \"120\",\r\n            \"Description\": \"MADAGASCAR\"\r\n        },\r\n        {\r\n            \"Value\": \"121\",\r\n            \"Description\": \"MOZAMBIQUE\"\r\n        },\r\n        {\r\n            \"Value\": \"122\",\r\n            \"Description\": \"SWAZILANDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"123\",\r\n            \"Description\": \"SUDAN\"\r\n        },\r\n        {\r\n            \"Value\": \"124\",\r\n            \"Description\": \"EGIPTO\"\r\n        },\r\n        {\r\n            \"Value\": \"125\",\r\n            \"Description\": \"LIBIA\"\r\n        },\r\n        {\r\n            \"Value\": \"126\",\r\n            \"Description\": \"TUNEZ\"\r\n        },\r\n        {\r\n            \"Value\": \"127\",\r\n            \"Description\": \"ARGELIA\"\r\n        },\r\n        {\r\n            \"Value\": \"128\",\r\n            \"Description\": \"MARRUECOS\"\r\n        },\r\n        {\r\n            \"Value\": \"129\",\r\n            \"Description\": \"CABO VERDE\"\r\n        },\r\n        {\r\n            \"Value\": \"130\",\r\n            \"Description\": \"CHAD\"\r\n        },\r\n        {\r\n            \"Value\": \"131\",\r\n            \"Description\": \"NIGER\"\r\n        },\r\n        {\r\n            \"Value\": \"133\",\r\n            \"Description\": \"MALI\"\r\n        },\r\n        {\r\n            \"Value\": \"134\",\r\n            \"Description\": \"MAURITANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"135\",\r\n            \"Description\": \"TANZANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"136\",\r\n            \"Description\": \"UGANDA\"\r\n        },\r\n        {\r\n            \"Value\": \"137\",\r\n            \"Description\": \"KENIA\"\r\n        },\r\n        {\r\n            \"Value\": \"138\",\r\n            \"Description\": \"SOMALIA\"\r\n        },\r\n        {\r\n            \"Value\": \"139\",\r\n            \"Description\": \"ETIOPIA\"\r\n        },\r\n        {\r\n            \"Value\": \"140\",\r\n            \"Description\": \"ANGOLA\"\r\n        },\r\n        {\r\n            \"Value\": \"141\",\r\n            \"Description\": \"BURUNDI\"\r\n        },\r\n        {\r\n            \"Value\": \"142\",\r\n            \"Description\": \"RWANDA\"\r\n        },\r\n        {\r\n            \"Value\": \"143\",\r\n            \"Description\": \"REP.DEM. CONGO\"\r\n        },\r\n        {\r\n            \"Value\": \"144\",\r\n            \"Description\": \"CONGO\"\r\n        },\r\n        {\r\n            \"Value\": \"145\",\r\n            \"Description\": \"GABON\"\r\n        },\r\n        {\r\n            \"Value\": \"146\",\r\n            \"Description\": \"S.TOM.PRINCIPE\"\r\n        },\r\n        {\r\n            \"Value\": \"147\",\r\n            \"Description\": \"GUINEA ECUATRL\"\r\n        },\r\n        {\r\n            \"Value\": \"148\",\r\n            \"Description\": \"REP.CENT.AFRIC.\"\r\n        },\r\n        {\r\n            \"Value\": \"149\",\r\n            \"Description\": \"CAMERUN\"\r\n        },\r\n        {\r\n            \"Value\": \"150\",\r\n            \"Description\": \"BENIN\"\r\n        },\r\n        {\r\n            \"Value\": \"151\",\r\n            \"Description\": \"TERR.BRIT.EN AF\"\r\n        },\r\n        {\r\n            \"Value\": \"152\",\r\n            \"Description\": \"TER.ESPAN.EN AF\"\r\n        },\r\n        {\r\n            \"Value\": \"153\",\r\n            \"Description\": \"TERR.FRAN.EN AF\"\r\n        },\r\n        {\r\n            \"Value\": \"155\",\r\n            \"Description\": \"DJIBOUTI\"\r\n        },\r\n        {\r\n            \"Value\": \"156\",\r\n            \"Description\": \"SEYCHELLES\"\r\n        },\r\n        {\r\n            \"Value\": \"159\",\r\n            \"Description\": \"NAMIBIA\"\r\n        },\r\n        {\r\n            \"Value\": \"160\",\r\n            \"Description\": \"SUDAN DEL SUR\"\r\n        },\r\n        {\r\n            \"Value\": \"161\",\r\n            \"Description\": \"BURKINA FASO\"\r\n        },\r\n        {\r\n            \"Value\": \"163\",\r\n            \"Description\": \"ERITREA\"\r\n        },\r\n        {\r\n            \"Value\": \"164\",\r\n            \"Description\": \"ISLAS MARSHALL\"\r\n        },\r\n        {\r\n            \"Value\": \"165\",\r\n            \"Description\": \"SAHARAUI\"\r\n        },\r\n        {\r\n            \"Value\": \"201\",\r\n            \"Description\": \"VENEZUELA\"\r\n        },\r\n        {\r\n            \"Value\": \"202\",\r\n            \"Description\": \"COLOMBIA\"\r\n        },\r\n        {\r\n            \"Value\": \"203\",\r\n            \"Description\": \"TRINID.Y TOBAGO\"\r\n        },\r\n        {\r\n            \"Value\": \"204\",\r\n            \"Description\": \"BARBADOS\"\r\n        },\r\n        {\r\n            \"Value\": \"205\",\r\n            \"Description\": \"JAMAICA\"\r\n        },\r\n        {\r\n            \"Value\": \"206\",\r\n            \"Description\": \"REP.DOMINICANA\"\r\n        },\r\n        {\r\n            \"Value\": \"207\",\r\n            \"Description\": \"BAHAMAS\"\r\n        },\r\n        {\r\n            \"Value\": \"208\",\r\n            \"Description\": \"HAITI\"\r\n        },\r\n        {\r\n            \"Value\": \"209\",\r\n            \"Description\": \"CUBA\"\r\n        },\r\n        {\r\n            \"Value\": \"210\",\r\n            \"Description\": \"PANAMA\"\r\n        },\r\n        {\r\n            \"Value\": \"211\",\r\n            \"Description\": \"COSTA RICA\"\r\n        },\r\n        {\r\n            \"Value\": \"212\",\r\n            \"Description\": \"NICARAGUA\"\r\n        },\r\n        {\r\n            \"Value\": \"213\",\r\n            \"Description\": \"EL SALVADOR\"\r\n        },\r\n        {\r\n            \"Value\": \"214\",\r\n            \"Description\": \"HONDURAS\"\r\n        },\r\n        {\r\n            \"Value\": \"215\",\r\n            \"Description\": \"GUATEMALA\"\r\n        },\r\n        {\r\n            \"Value\": \"216\",\r\n            \"Description\": \"MEXICO\"\r\n        },\r\n        {\r\n            \"Value\": \"217\",\r\n            \"Description\": \"GUYANA\"\r\n        },\r\n        {\r\n            \"Value\": \"218\",\r\n            \"Description\": \"ECUADOR\"\r\n        },\r\n        {\r\n            \"Value\": \"219\",\r\n            \"Description\": \"PERU\"\r\n        },\r\n        {\r\n            \"Value\": \"220\",\r\n            \"Description\": \"BRASIL\"\r\n        },\r\n        {\r\n            \"Value\": \"221\",\r\n            \"Description\": \"BOLIVIA\"\r\n        },\r\n        {\r\n            \"Value\": \"222\",\r\n            \"Description\": \"PARAGUAY\"\r\n        },\r\n        {\r\n            \"Value\": \"223\",\r\n            \"Description\": \"URUGUAY\"\r\n        },\r\n        {\r\n            \"Value\": \"224\",\r\n            \"Description\": \"ARGENTINA\"\r\n        },\r\n        {\r\n            \"Value\": \"225\",\r\n            \"Description\": \"U.S.A.\"\r\n        },\r\n        {\r\n            \"Value\": \"226\",\r\n            \"Description\": \"CANADA\"\r\n        },\r\n        {\r\n            \"Value\": \"227\",\r\n            \"Description\": \"TERR.BRIT.EN AM\"\r\n        },\r\n        {\r\n            \"Value\": \"228\",\r\n            \"Description\": \"TERR.FRAN.EN AM\"\r\n        },\r\n        {\r\n            \"Value\": \"229\",\r\n            \"Description\": \"TER.HOLAN.EN AM\"\r\n        },\r\n        {\r\n            \"Value\": \"230\",\r\n            \"Description\": \"TERR.D/DINAMARC\"\r\n        },\r\n        {\r\n            \"Value\": \"231\",\r\n            \"Description\": \"DOMINICA\"\r\n        },\r\n        {\r\n            \"Value\": \"232\",\r\n            \"Description\": \"GRANADA\"\r\n        },\r\n        {\r\n            \"Value\": \"233\",\r\n            \"Description\": \"SANTA LUCIA(ISL\"\r\n        },\r\n        {\r\n            \"Value\": \"234\",\r\n            \"Description\": \"S.VTE.Y GRANAD.\"\r\n        },\r\n        {\r\n            \"Value\": \"235\",\r\n            \"Description\": \"SURINAM\"\r\n        },\r\n        {\r\n            \"Value\": \"236\",\r\n            \"Description\": \"BELICE\"\r\n        },\r\n        {\r\n            \"Value\": \"240\",\r\n            \"Description\": \"ANTIGUA Y BBUDA\"\r\n        },\r\n        {\r\n            \"Value\": \"241\",\r\n            \"Description\": \"SNT.KIT & NEVIS\"\r\n        },\r\n        {\r\n            \"Value\": \"242\",\r\n            \"Description\": \"ANGUILA\"\r\n        },\r\n        {\r\n            \"Value\": \"243\",\r\n            \"Description\": \"ARUBA\"\r\n        },\r\n        {\r\n            \"Value\": \"244\",\r\n            \"Description\": \"BERMUDAS\"\r\n        },\r\n        {\r\n            \"Value\": \"245\",\r\n            \"Description\": \"ISLAS VIRG.BRIT\"\r\n        },\r\n        {\r\n            \"Value\": \"246\",\r\n            \"Description\": \"ISLAS CAYMAN\"\r\n        },\r\n        {\r\n            \"Value\": \"247\",\r\n            \"Description\": \"ANTILLAS NEERLA\"\r\n        },\r\n        {\r\n            \"Value\": \"248\",\r\n            \"Description\": \"TURCAS Y CAICOS\"\r\n        },\r\n        {\r\n            \"Value\": \"249\",\r\n            \"Description\": \"ISLAS VIRG.EUA\"\r\n        },\r\n        {\r\n            \"Value\": \"250\",\r\n            \"Description\": \"MARTINICA\"\r\n        },\r\n        {\r\n            \"Value\": \"251\",\r\n            \"Description\": \"PUERTO RICO\"\r\n        },\r\n        {\r\n            \"Value\": \"252\",\r\n            \"Description\": \"MONSERRAT\"\r\n        },\r\n        {\r\n            \"Value\": \"253\",\r\n            \"Description\": \"GROENLADIA\"\r\n        },\r\n        {\r\n            \"Value\": \"301\",\r\n            \"Description\": \"JORDANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"302\",\r\n            \"Description\": \"ARABIA SAUDITA\"\r\n        },\r\n        {\r\n            \"Value\": \"303\",\r\n            \"Description\": \"KUWAIT\"\r\n        },\r\n        {\r\n            \"Value\": \"304\",\r\n            \"Description\": \"OMAN\"\r\n        },\r\n        {\r\n            \"Value\": \"305\",\r\n            \"Description\": \"CHIPRE\"\r\n        },\r\n        {\r\n            \"Value\": \"306\",\r\n            \"Description\": \"ISRAEL\"\r\n        },\r\n        {\r\n            \"Value\": \"307\",\r\n            \"Description\": \"IRAK\"\r\n        },\r\n        {\r\n            \"Value\": \"308\",\r\n            \"Description\": \"AFGHANISTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"309\",\r\n            \"Description\": \"IRAN\"\r\n        },\r\n        {\r\n            \"Value\": \"310\",\r\n            \"Description\": \"SIRIA\"\r\n        },\r\n        {\r\n            \"Value\": \"311\",\r\n            \"Description\": \"LIBANO\"\r\n        },\r\n        {\r\n            \"Value\": \"312\",\r\n            \"Description\": \"QATAR\"\r\n        },\r\n        {\r\n            \"Value\": \"313\",\r\n            \"Description\": \"BAHREIN\"\r\n        },\r\n        {\r\n            \"Value\": \"314\",\r\n            \"Description\": \"SRI LANKA\"\r\n        },\r\n        {\r\n            \"Value\": \"315\",\r\n            \"Description\": \"CAMBODIA\"\r\n        },\r\n        {\r\n            \"Value\": \"316\",\r\n            \"Description\": \"LAOS\"\r\n        },\r\n        {\r\n            \"Value\": \"317\",\r\n            \"Description\": \"INDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"318\",\r\n            \"Description\": \"BUTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"319\",\r\n            \"Description\": \"THAILANDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"320\",\r\n            \"Description\": \"NEPAL\"\r\n        },\r\n        {\r\n            \"Value\": \"321\",\r\n            \"Description\": \"BANGLADESH\"\r\n        },\r\n        {\r\n            \"Value\": \"322\",\r\n            \"Description\": \"PALESTINA\"\r\n        },\r\n        {\r\n            \"Value\": \"324\",\r\n            \"Description\": \"PAKISTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"325\",\r\n            \"Description\": \"VIETNAM\"\r\n        },\r\n        {\r\n            \"Value\": \"326\",\r\n            \"Description\": \"MYANMAR (EX BIR\"\r\n        },\r\n        {\r\n            \"Value\": \"327\",\r\n            \"Description\": \"ISLAS MALDIVAS\"\r\n        },\r\n        {\r\n            \"Value\": \"328\",\r\n            \"Description\": \"INDONESIA\"\r\n        },\r\n        {\r\n            \"Value\": \"329\",\r\n            \"Description\": \"MALASIA\"\r\n        },\r\n        {\r\n            \"Value\": \"330\",\r\n            \"Description\": \"TAIWAN (FORMOSA\"\r\n        },\r\n        {\r\n            \"Value\": \"331\",\r\n            \"Description\": \"JAPON\"\r\n        },\r\n        {\r\n            \"Value\": \"332\",\r\n            \"Description\": \"SINGAPUR\"\r\n        },\r\n        {\r\n            \"Value\": \"333\",\r\n            \"Description\": \"COREA DEL SUR\"\r\n        },\r\n        {\r\n            \"Value\": \"334\",\r\n            \"Description\": \"RPD COREA DEL N\"\r\n        },\r\n        {\r\n            \"Value\": \"335\",\r\n            \"Description\": \"FILIPINAS\"\r\n        },\r\n        {\r\n            \"Value\": \"336\",\r\n            \"Description\": \"CHINA\"\r\n        },\r\n        {\r\n            \"Value\": \"337\",\r\n            \"Description\": \"MONGOLIA\"\r\n        },\r\n        {\r\n            \"Value\": \"341\",\r\n            \"Description\": \"EMIR.ARAB.UNID.\"\r\n        },\r\n        {\r\n            \"Value\": \"342\",\r\n            \"Description\": \"HONG KONG\"\r\n        },\r\n        {\r\n            \"Value\": \"343\",\r\n            \"Description\": \"TER.PORTUG.E/AS\"\r\n        },\r\n        {\r\n            \"Value\": \"344\",\r\n            \"Description\": \"BRUNEI\"\r\n        },\r\n        {\r\n            \"Value\": \"345\",\r\n            \"Description\": \"MACAO\"\r\n        },\r\n        {\r\n            \"Value\": \"346\",\r\n            \"Description\": \"REPUBLICA DE YE\"\r\n        },\r\n        {\r\n            \"Value\": \"401\",\r\n            \"Description\": \"FIJI\"\r\n        },\r\n        {\r\n            \"Value\": \"402\",\r\n            \"Description\": \"NAURU\"\r\n        },\r\n        {\r\n            \"Value\": \"403\",\r\n            \"Description\": \"ISLAS TONGA\"\r\n        },\r\n        {\r\n            \"Value\": \"404\",\r\n            \"Description\": \"SAMOA OCC.\"\r\n        },\r\n        {\r\n            \"Value\": \"405\",\r\n            \"Description\": \"NUEVA ZELANDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"406\",\r\n            \"Description\": \"AUSTRALIA\"\r\n        },\r\n        {\r\n            \"Value\": \"407\",\r\n            \"Description\": \"TERR.BRIT.EN OP\"\r\n        },\r\n        {\r\n            \"Value\": \"408\",\r\n            \"Description\": \"TERR.FRAN.EN OP\"\r\n        },\r\n        {\r\n            \"Value\": \"409\",\r\n            \"Description\": \"T.NORTEAM.EN OP\"\r\n        },\r\n        {\r\n            \"Value\": \"412\",\r\n            \"Description\": \"PPUA.NVA.GUINEA\"\r\n        },\r\n        {\r\n            \"Value\": \"415\",\r\n            \"Description\": \"VANUATU\"\r\n        },\r\n        {\r\n            \"Value\": \"416\",\r\n            \"Description\": \"KIRIBATI\"\r\n        },\r\n        {\r\n            \"Value\": \"417\",\r\n            \"Description\": \"MICRONESIA\"\r\n        },\r\n        {\r\n            \"Value\": \"418\",\r\n            \"Description\": \"ISLAS SALOMON\"\r\n        },\r\n        {\r\n            \"Value\": \"419\",\r\n            \"Description\": \"TUVALU\"\r\n        },\r\n        {\r\n            \"Value\": \"420\",\r\n            \"Description\": \"BELAU\"\r\n        },\r\n        {\r\n            \"Value\": \"421\",\r\n            \"Description\": \"NIUE\"\r\n        },\r\n        {\r\n            \"Value\": \"422\",\r\n            \"Description\": \"POLINESIA FRAN.\"\r\n        },\r\n        {\r\n            \"Value\": \"423\",\r\n            \"Description\": \"NUEVA CALEDONIA\"\r\n        },\r\n        {\r\n            \"Value\": \"424\",\r\n            \"Description\": \"ISLAS MARIANAS\"\r\n        },\r\n        {\r\n            \"Value\": \"425\",\r\n            \"Description\": \"GUAM\"\r\n        },\r\n        {\r\n            \"Value\": \"426\",\r\n            \"Description\": \"TIMOR ORIENTAL\"\r\n        },\r\n        {\r\n            \"Value\": \"427\",\r\n            \"Description\": \"ISLAS COOK\"\r\n        },\r\n        {\r\n            \"Value\": \"501\",\r\n            \"Description\": \"PORTUGAL\"\r\n        },\r\n        {\r\n            \"Value\": \"504\",\r\n            \"Description\": \"ITALIA\"\r\n        },\r\n        {\r\n            \"Value\": \"505\",\r\n            \"Description\": \"FRANCIA\"\r\n        },\r\n        {\r\n            \"Value\": \"506\",\r\n            \"Description\": \"IRLANDA\"\r\n        },\r\n        {\r\n            \"Value\": \"507\",\r\n            \"Description\": \"DINAMARCA\"\r\n        },\r\n        {\r\n            \"Value\": \"508\",\r\n            \"Description\": \"SUIZA\"\r\n        },\r\n        {\r\n            \"Value\": \"509\",\r\n            \"Description\": \"AUSTRIA\"\r\n        },\r\n        {\r\n            \"Value\": \"510\",\r\n            \"Description\": \"REINO UNIDO\"\r\n        },\r\n        {\r\n            \"Value\": \"511\",\r\n            \"Description\": \"SUECIA\"\r\n        },\r\n        {\r\n            \"Value\": \"512\",\r\n            \"Description\": \"FINLANDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"513\",\r\n            \"Description\": \"NORUEGA\"\r\n        },\r\n        {\r\n            \"Value\": \"514\",\r\n            \"Description\": \"BELGICA\"\r\n        },\r\n        {\r\n            \"Value\": \"515\",\r\n            \"Description\": \"HOLANDA\"\r\n        },\r\n        {\r\n            \"Value\": \"516\",\r\n            \"Description\": \"ISLANDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"517\",\r\n            \"Description\": \"ESPANA\"\r\n        },\r\n        {\r\n            \"Value\": \"518\",\r\n            \"Description\": \"ALBANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"519\",\r\n            \"Description\": \"RUMANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"520\",\r\n            \"Description\": \"GRECIA\"\r\n        },\r\n        {\r\n            \"Value\": \"522\",\r\n            \"Description\": \"TURQUIA\"\r\n        },\r\n        {\r\n            \"Value\": \"523\",\r\n            \"Description\": \"MALTA\"\r\n        },\r\n        {\r\n            \"Value\": \"524\",\r\n            \"Description\": \"SANTA SEDE\"\r\n        },\r\n        {\r\n            \"Value\": \"525\",\r\n            \"Description\": \"ANDORRA\"\r\n        },\r\n        {\r\n            \"Value\": \"527\",\r\n            \"Description\": \"BULGARIA\"\r\n        },\r\n        {\r\n            \"Value\": \"528\",\r\n            \"Description\": \"POLONIA\"\r\n        },\r\n        {\r\n            \"Value\": \"530\",\r\n            \"Description\": \"HUNGRIA\"\r\n        },\r\n        {\r\n            \"Value\": \"532\",\r\n            \"Description\": \"LUXEMBURGO\"\r\n        },\r\n        {\r\n            \"Value\": \"534\",\r\n            \"Description\": \"LIECHTENSTEIN\"\r\n        },\r\n        {\r\n            \"Value\": \"535\",\r\n            \"Description\": \"MONACO\"\r\n        },\r\n        {\r\n            \"Value\": \"536\",\r\n            \"Description\": \"SAN MARINO\"\r\n        },\r\n        {\r\n            \"Value\": \"540\",\r\n            \"Description\": \"ARMENIA\"\r\n        },\r\n        {\r\n            \"Value\": \"541\",\r\n            \"Description\": \"AZERBAIJAN\"\r\n        },\r\n        {\r\n            \"Value\": \"542\",\r\n            \"Description\": \"BELARUS\"\r\n        },\r\n        {\r\n            \"Value\": \"543\",\r\n            \"Description\": \"BOSNIA HEZGVINA\"\r\n        },\r\n        {\r\n            \"Value\": \"544\",\r\n            \"Description\": \"REPUBLICA CHECA\"\r\n        },\r\n        {\r\n            \"Value\": \"545\",\r\n            \"Description\": \"REP.ESLOVACA\"\r\n        },\r\n        {\r\n            \"Value\": \"546\",\r\n            \"Description\": \"REPUBLICA DE SE\"\r\n        },\r\n        {\r\n            \"Value\": \"547\",\r\n            \"Description\": \"CROACIA\"\r\n        },\r\n        {\r\n            \"Value\": \"548\",\r\n            \"Description\": \"ESLOVENIA\"\r\n        },\r\n        {\r\n            \"Value\": \"549\",\r\n            \"Description\": \"ESTONIA\"\r\n        },\r\n        {\r\n            \"Value\": \"550\",\r\n            \"Description\": \"GEORGIA (B)\"\r\n        },\r\n        {\r\n            \"Value\": \"551\",\r\n            \"Description\": \"KASAJSTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"552\",\r\n            \"Description\": \"KIRGISTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"553\",\r\n            \"Description\": \"LETONIA\"\r\n        },\r\n        {\r\n            \"Value\": \"554\",\r\n            \"Description\": \"LITUANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"555\",\r\n            \"Description\": \"MACEDONIA\"\r\n        },\r\n        {\r\n            \"Value\": \"556\",\r\n            \"Description\": \"MOLDOVA\"\r\n        },\r\n        {\r\n            \"Value\": \"557\",\r\n            \"Description\": \"TADJIKISTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"558\",\r\n            \"Description\": \"TURKMENISTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"559\",\r\n            \"Description\": \"UCRANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"560\",\r\n            \"Description\": \"UZBEKISTAN\"\r\n        },\r\n        {\r\n            \"Value\": \"561\",\r\n            \"Description\": \"MONTENEGRO\"\r\n        },\r\n        {\r\n            \"Value\": \"562\",\r\n            \"Description\": \"RUSIA\"\r\n        },\r\n        {\r\n            \"Value\": \"563\",\r\n            \"Description\": \"ALEMANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"565\",\r\n            \"Description\": \"GIBRALTAR\"\r\n        },\r\n        {\r\n            \"Value\": \"566\",\r\n            \"Description\": \"GUERNSEY\"\r\n        },\r\n        {\r\n            \"Value\": \"567\",\r\n            \"Description\": \"ISLAS DE MAN\"\r\n        },\r\n        {\r\n            \"Value\": \"568\",\r\n            \"Description\": \"JERSEY\"\r\n        },\r\n        {\r\n            \"Value\": \"888\",\r\n            \"Description\": \"LOS DEMAS\"\r\n        },\r\n        {\r\n            \"Value\": \"901\",\r\n            \"Description\": \"COMB.Y LUBRIC.\"\r\n        },\r\n        {\r\n            \"Value\": \"902\",\r\n            \"Description\": \"RANCHO DE NAVES\"\r\n        },\r\n        {\r\n            \"Value\": \"903\",\r\n            \"Description\": \"PESCA EXTRA\"\r\n        },\r\n        {\r\n            \"Value\": \"904\",\r\n            \"Description\": \"ORIG.O DEST. NO\"\r\n        },\r\n        {\r\n            \"Value\": \"905\",\r\n            \"Description\": \"ZF.IQUIQUE\"\r\n        },\r\n        {\r\n            \"Value\": \"906\",\r\n            \"Description\": \"DEPOSITO FRANCO\"\r\n        },\r\n        {\r\n            \"Value\": \"907\",\r\n            \"Description\": \"ZF.PARENAS\"\r\n        },\r\n        {\r\n            \"Value\": \"910\",\r\n            \"Description\": \"ZF.ARICA-ZF IND\"\r\n        },\r\n        {\r\n            \"Value\": \"997\",\r\n            \"Description\": \"CHILE\"\r\n        },\r\n        {\r\n            \"Value\": \"998\",\r\n            \"Description\": \"NAC.REPUTADA\"\r\n        },\r\n        {\r\n            \"Value\": \"999\",\r\n            \"Description\": \"OTROS\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_LugEmbarq OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_LugEmbarq\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 10,\r\n    \"Description\": \"Lugar de Embarque\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 29,\r\n    \"EditSize\": 10,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"111\",\r\n            \"Description\": \"MONTREAL\"\r\n        },\r\n        {\r\n            \"Value\": \"112\",\r\n            \"Description\": \"COSTADELPACIFICO\"\r\n        },\r\n        {\r\n            \"Value\": \"113\",\r\n            \"Description\": \"HALIFAX\"\r\n        },\r\n        {\r\n            \"Value\": \"114\",\r\n            \"Description\": \"VANCOUVER\"\r\n        },\r\n        {\r\n            \"Value\": \"115\",\r\n            \"Description\": \"SAINTJOHN\"\r\n        },\r\n        {\r\n            \"Value\": \"116\",\r\n            \"Description\": \"TORONTO\"\r\n        },\r\n        {\r\n            \"Value\": \"117\",\r\n            \"Description\": \"OTROSPUERTOSCANADA\"\r\n        },\r\n        {\r\n            \"Value\": \"118\",\r\n            \"Description\": \"BAYSIDE\"\r\n        },\r\n        {\r\n            \"Value\": \"120\",\r\n            \"Description\": \"PORTCARTIES\"\r\n        },\r\n        {\r\n            \"Value\": \"121\",\r\n            \"Description\": \"COSTADELATLANTICO\"\r\n        },\r\n        {\r\n            \"Value\": \"122\",\r\n            \"Description\": \"PUERTOSDELGOLFOME\"\r\n        },\r\n        {\r\n            \"Value\": \"123\",\r\n            \"Description\": \"COSTADELPACIFICO\"\r\n        },\r\n        {\r\n            \"Value\": \"124\",\r\n            \"Description\": \"QUEBEC\"\r\n        },\r\n        {\r\n            \"Value\": \"125\",\r\n            \"Description\": \"PRINCERUPERT\"\r\n        },\r\n        {\r\n            \"Value\": \"126\",\r\n            \"Description\": \"HAMILTON\"\r\n        },\r\n        {\r\n            \"Value\": \"131\",\r\n            \"Description\": \"BOSTON\"\r\n        },\r\n        {\r\n            \"Value\": \"132\",\r\n            \"Description\": \"NEWHAVEN\"\r\n        },\r\n        {\r\n            \"Value\": \"133\",\r\n            \"Description\": \"BRIDGEPORT\"\r\n        },\r\n        {\r\n            \"Value\": \"134\",\r\n            \"Description\": \"NEWYORK\"\r\n        },\r\n        {\r\n            \"Value\": \"135\",\r\n            \"Description\": \"FILADELFIA\"\r\n        },\r\n        {\r\n            \"Value\": \"136\",\r\n            \"Description\": \"BALTIMORE\"\r\n        },\r\n        {\r\n            \"Value\": \"137\",\r\n            \"Description\": \"NORFOLK\"\r\n        },\r\n        {\r\n            \"Value\": \"139\",\r\n            \"Description\": \"CHARLESTON\"\r\n        },\r\n        {\r\n            \"Value\": \"140\",\r\n            \"Description\": \"SAVANAH\"\r\n        },\r\n        {\r\n            \"Value\": \"141\",\r\n            \"Description\": \"MIAMI\"\r\n        },\r\n        {\r\n            \"Value\": \"142\",\r\n            \"Description\": \"EVERGLADES\"\r\n        },\r\n        {\r\n            \"Value\": \"143\",\r\n            \"Description\": \"JACKSONVILLE\"\r\n        },\r\n        {\r\n            \"Value\": \"145\",\r\n            \"Description\": \"PALMBEACH\"\r\n        },\r\n        {\r\n            \"Value\": \"146\",\r\n            \"Description\": \"BATONROUGE\"\r\n        },\r\n        {\r\n            \"Value\": \"147\",\r\n            \"Description\": \"COLUMBRES\"\r\n        },\r\n        {\r\n            \"Value\": \"148\",\r\n            \"Description\": \"PITTSBURGH\"\r\n        },\r\n        {\r\n            \"Value\": \"149\",\r\n            \"Description\": \"DULUTH\"\r\n        },\r\n        {\r\n            \"Value\": \"150\",\r\n            \"Description\": \"MILWAUKEE\"\r\n        },\r\n        {\r\n            \"Value\": \"151\",\r\n            \"Description\": \"TAMPA\"\r\n        },\r\n        {\r\n            \"Value\": \"152\",\r\n            \"Description\": \"PENSACOLA\"\r\n        },\r\n        {\r\n            \"Value\": \"153\",\r\n            \"Description\": \"MOBILE\"\r\n        },\r\n        {\r\n            \"Value\": \"154\",\r\n            \"Description\": \"NEWORLEANS\"\r\n        },\r\n        {\r\n            \"Value\": \"155\",\r\n            \"Description\": \"PORTARTHUR\"\r\n        },\r\n        {\r\n            \"Value\": \"156\",\r\n            \"Description\": \"GALVESTON\"\r\n        },\r\n        {\r\n            \"Value\": \"157\",\r\n            \"Description\": \"CORPUSCRISTI\"\r\n        },\r\n        {\r\n            \"Value\": \"158\",\r\n            \"Description\": \"BROWNSVILLE\"\r\n        },\r\n        {\r\n            \"Value\": \"159\",\r\n            \"Description\": \"HOUSTON\"\r\n        },\r\n        {\r\n            \"Value\": \"160\",\r\n            \"Description\": \"OAKLAND\"\r\n        },\r\n        {\r\n            \"Value\": \"161\",\r\n            \"Description\": \"STOCKTON\"\r\n        },\r\n        {\r\n            \"Value\": \"171\",\r\n            \"Description\": \"SEATTLE\"\r\n        },\r\n        {\r\n            \"Value\": \"172\",\r\n            \"Description\": \"PORTLAND\"\r\n        },\r\n        {\r\n            \"Value\": \"173\",\r\n            \"Description\": \"SANFRANCISCO\"\r\n        },\r\n        {\r\n            \"Value\": \"174\",\r\n            \"Description\": \"LOSANGELES\"\r\n        },\r\n        {\r\n            \"Value\": \"175\",\r\n            \"Description\": \"LONGBEACH\"\r\n        },\r\n        {\r\n            \"Value\": \"176\",\r\n            \"Description\": \"SANDIEGO\"\r\n        },\r\n        {\r\n            \"Value\": \"180\",\r\n            \"Description\": \"OTROSPUERTOSEE.UU.\"\r\n        },\r\n        {\r\n            \"Value\": \"199\",\r\n            \"Description\": \"LOSVILOS\"\r\n        },\r\n        {\r\n            \"Value\": \"204\",\r\n            \"Description\": \"PATACHE\"\r\n        },\r\n        {\r\n            \"Value\": \"205\",\r\n            \"Description\": \"CALBUCO\"\r\n        },\r\n        {\r\n            \"Value\": \"206\",\r\n            \"Description\": \"MICHILLA\"\r\n        },\r\n        {\r\n            \"Value\": \"207\",\r\n            \"Description\": \"PUERTOANGAMOS\"\r\n        },\r\n        {\r\n            \"Value\": \"208\",\r\n            \"Description\": \"POSEIDON\"\r\n        },\r\n        {\r\n            \"Value\": \"209\",\r\n            \"Description\": \"TRESPUENTES\"\r\n        },\r\n        {\r\n            \"Value\": \"210\",\r\n            \"Description\": \"OTROSPUERTOSMEXICO\"\r\n        },\r\n        {\r\n            \"Value\": \"211\",\r\n            \"Description\": \"TAMPICO\"\r\n        },\r\n        {\r\n            \"Value\": \"212\",\r\n            \"Description\": \"COSTADELPACIFICO\"\r\n        },\r\n        {\r\n            \"Value\": \"213\",\r\n            \"Description\": \"VERACRUZ\"\r\n        },\r\n        {\r\n            \"Value\": \"214\",\r\n            \"Description\": \"COATZACOALCOS\"\r\n        },\r\n        {\r\n            \"Value\": \"215\",\r\n            \"Description\": \"GUAYMAS\"\r\n        },\r\n        {\r\n            \"Value\": \"216\",\r\n            \"Description\": \"MAZATLAN\"\r\n        },\r\n        {\r\n            \"Value\": \"217\",\r\n            \"Description\": \"MANZANILLO\"\r\n        },\r\n        {\r\n            \"Value\": \"218\",\r\n            \"Description\": \"ACAPULCO\"\r\n        },\r\n        {\r\n            \"Value\": \"219\",\r\n            \"Description\": \"GOLFODEMEXICO,OTRO\"\r\n        },\r\n        {\r\n            \"Value\": \"220\",\r\n            \"Description\": \"ALTAMIRA\"\r\n        },\r\n        {\r\n            \"Value\": \"221\",\r\n            \"Description\": \"CRISTOBAL\"\r\n        },\r\n        {\r\n            \"Value\": \"222\",\r\n            \"Description\": \"BALBOA\"\r\n        },\r\n        {\r\n            \"Value\": \"223\",\r\n            \"Description\": \"COLON\"\r\n        },\r\n        {\r\n            \"Value\": \"224\",\r\n            \"Description\": \"OTROSPTOS.PANAMA\"\r\n        },\r\n        {\r\n            \"Value\": \"225\",\r\n            \"Description\": \"PASOGUANACOSONSO\"\r\n        },\r\n        {\r\n            \"Value\": \"231\",\r\n            \"Description\": \"OTROSPTOS.COLOMBIA\"\r\n        },\r\n        {\r\n            \"Value\": \"232\",\r\n            \"Description\": \"BUENAVENTURA\"\r\n        },\r\n        {\r\n            \"Value\": \"233\",\r\n            \"Description\": \"BARRANQUILLA\"\r\n        },\r\n        {\r\n            \"Value\": \"241\",\r\n            \"Description\": \"OTROSPTOS.ECUADOR\"\r\n        },\r\n        {\r\n            \"Value\": \"242\",\r\n            \"Description\": \"GUAYAQUIL\"\r\n        },\r\n        {\r\n            \"Value\": \"251\",\r\n            \"Description\": \"OTROSPTOS.DEPERU\"\r\n        },\r\n        {\r\n            \"Value\": \"252\",\r\n            \"Description\": \"CALLAO\"\r\n        },\r\n        {\r\n            \"Value\": \"253\",\r\n            \"Description\": \"ILO\"\r\n        },\r\n        {\r\n            \"Value\": \"254\",\r\n            \"Description\": \"IQUITOS\"\r\n        },\r\n        {\r\n            \"Value\": \"261\",\r\n            \"Description\": \"OTROSPTOS.ARGENTINA\"\r\n        },\r\n        {\r\n            \"Value\": \"262\",\r\n            \"Description\": \"BUENOSAIRES\"\r\n        },\r\n        {\r\n            \"Value\": \"263\",\r\n            \"Description\": \"NECOCHEA\"\r\n        },\r\n        {\r\n            \"Value\": \"264\",\r\n            \"Description\": \"MENDOZA\"\r\n        },\r\n        {\r\n            \"Value\": \"265\",\r\n            \"Description\": \"CORDOBA\"\r\n        },\r\n        {\r\n            \"Value\": \"266\",\r\n            \"Description\": \"BAHIABLANCA\"\r\n        },\r\n        {\r\n            \"Value\": \"267\",\r\n            \"Description\": \"COMODORORIVADAVIA\"\r\n        },\r\n        {\r\n            \"Value\": \"268\",\r\n            \"Description\": \"PUERTOMADRYN\"\r\n        },\r\n        {\r\n            \"Value\": \"269\",\r\n            \"Description\": \"MARDELPLATA\"\r\n        },\r\n        {\r\n            \"Value\": \"270\",\r\n            \"Description\": \"ROSARIO\"\r\n        },\r\n        {\r\n            \"Value\": \"271\",\r\n            \"Description\": \"OTROSPTOS.URUGUAY\"\r\n        },\r\n        {\r\n            \"Value\": \"272\",\r\n            \"Description\": \"MONTEVIDEO\"\r\n        },\r\n        {\r\n            \"Value\": \"281\",\r\n            \"Description\": \"OTROSPTOS.VENEZUELA\"\r\n        },\r\n        {\r\n            \"Value\": \"282\",\r\n            \"Description\": \"LAGUAIRA\"\r\n        },\r\n        {\r\n            \"Value\": \"285\",\r\n            \"Description\": \"MARACAIBO\"\r\n        },\r\n        {\r\n            \"Value\": \"291\",\r\n            \"Description\": \"OTROSPTOS.BRASIL\"\r\n        },\r\n        {\r\n            \"Value\": \"292\",\r\n            \"Description\": \"SANTOS\"\r\n        },\r\n        {\r\n            \"Value\": \"293\",\r\n            \"Description\": \"RIODEJANEIRO\"\r\n        },\r\n        {\r\n            \"Value\": \"294\",\r\n            \"Description\": \"RIOGRANDEDELSUR\"\r\n        },\r\n        {\r\n            \"Value\": \"295\",\r\n            \"Description\": \"PARANAGUA\"\r\n        },\r\n        {\r\n            \"Value\": \"296\",\r\n            \"Description\": \"SAOPAULO\"\r\n        },\r\n        {\r\n            \"Value\": \"297\",\r\n            \"Description\": \"SALVADOR\"\r\n        },\r\n        {\r\n            \"Value\": \"301\",\r\n            \"Description\": \"OTROSANT.HOLANDESA\"\r\n        },\r\n        {\r\n            \"Value\": \"302\",\r\n            \"Description\": \"CURAZAO\"\r\n        },\r\n        {\r\n            \"Value\": \"399\",\r\n            \"Description\": \"OTROSPTOS.AMERICA\"\r\n        },\r\n        {\r\n            \"Value\": \"411\",\r\n            \"Description\": \"SHANGAI\"\r\n        },\r\n        {\r\n            \"Value\": \"412\",\r\n            \"Description\": \"DAIREN\"\r\n        },\r\n        {\r\n            \"Value\": \"413\",\r\n            \"Description\": \"OTROSPTOS.DECHINA\"\r\n        },\r\n        {\r\n            \"Value\": \"420\",\r\n            \"Description\": \"OTROSPUERTCOREAN\"\r\n        },\r\n        {\r\n            \"Value\": \"421\",\r\n            \"Description\": \"NAMPO\"\r\n        },\r\n        {\r\n            \"Value\": \"422\",\r\n            \"Description\": \"BUSAN\"\r\n        },\r\n        {\r\n            \"Value\": \"423\",\r\n            \"Description\": \"OTROSPTOS.COREAS\"\r\n        },\r\n        {\r\n            \"Value\": \"431\",\r\n            \"Description\": \"MANILA\"\r\n        },\r\n        {\r\n            \"Value\": \"432\",\r\n            \"Description\": \"OTROSPTOS.FILIPINAS\"\r\n        },\r\n        {\r\n            \"Value\": \"441\",\r\n            \"Description\": \"OTROSPTOS.JAPONESES\"\r\n        },\r\n        {\r\n            \"Value\": \"442\",\r\n            \"Description\": \"OSAKA\"\r\n        },\r\n        {\r\n            \"Value\": \"443\",\r\n            \"Description\": \"KOBE\"\r\n        },\r\n        {\r\n            \"Value\": \"444\",\r\n            \"Description\": \"YOKOHAMA\"\r\n        },\r\n        {\r\n            \"Value\": \"445\",\r\n            \"Description\": \"NAGOYA\"\r\n        },\r\n        {\r\n            \"Value\": \"446\",\r\n            \"Description\": \"SHIMIZUI\"\r\n        },\r\n        {\r\n            \"Value\": \"447\",\r\n            \"Description\": \"MOJI\"\r\n        },\r\n        {\r\n            \"Value\": \"448\",\r\n            \"Description\": \"YAWATA\"\r\n        },\r\n        {\r\n            \"Value\": \"449\",\r\n            \"Description\": \"FUKUYAMA\"\r\n        },\r\n        {\r\n            \"Value\": \"451\",\r\n            \"Description\": \"KAOHSIUNG\"\r\n        },\r\n        {\r\n            \"Value\": \"452\",\r\n            \"Description\": \"KEELUNG\"\r\n        },\r\n        {\r\n            \"Value\": \"453\",\r\n            \"Description\": \"OTROSPTOS.TAIWAN\"\r\n        },\r\n        {\r\n            \"Value\": \"461\",\r\n            \"Description\": \"KARHGISLAND\"\r\n        },\r\n        {\r\n            \"Value\": \"462\",\r\n            \"Description\": \"OTROSPTO.IRANNOES\"\r\n        },\r\n        {\r\n            \"Value\": \"471\",\r\n            \"Description\": \"CALCUTA\"\r\n        },\r\n        {\r\n            \"Value\": \"472\",\r\n            \"Description\": \"OTROSPTOS.DEINDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"481\",\r\n            \"Description\": \"CHALNA\"\r\n        },\r\n        {\r\n            \"Value\": \"482\",\r\n            \"Description\": \"OTROSPTO.BANGLADESH\"\r\n        },\r\n        {\r\n            \"Value\": \"491\",\r\n            \"Description\": \"OTROSPTO.SINGAPURE\"\r\n        },\r\n        {\r\n            \"Value\": \"492\",\r\n            \"Description\": \"HONGKONG\"\r\n        },\r\n        {\r\n            \"Value\": \"499\",\r\n            \"Description\": \"OTROSPTO.ASIATICOS\"\r\n        },\r\n        {\r\n            \"Value\": \"511\",\r\n            \"Description\": \"CONSTANZA\"\r\n        },\r\n        {\r\n            \"Value\": \"512\",\r\n            \"Description\": \"OTROSPTO.DERUMANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"521\",\r\n            \"Description\": \"VARNA\"\r\n        },\r\n        {\r\n            \"Value\": \"522\",\r\n            \"Description\": \"OTROSPTOSBULGARIA\"\r\n        },\r\n        {\r\n            \"Value\": \"533\",\r\n            \"Description\": \"BELGRADO\"\r\n        },\r\n        {\r\n            \"Value\": \"534\",\r\n            \"Description\": \"OTROSPUERTOSDESER\"\r\n        },\r\n        {\r\n            \"Value\": \"535\",\r\n            \"Description\": \"PODGORITSA\"\r\n        },\r\n        {\r\n            \"Value\": \"536\",\r\n            \"Description\": \"OTROSPUERTOSDEMON\"\r\n        },\r\n        {\r\n            \"Value\": \"537\",\r\n            \"Description\": \"OTROSPUERTOSDECRO\"\r\n        },\r\n        {\r\n            \"Value\": \"538\",\r\n            \"Description\": \"RIJEKA\"\r\n        },\r\n        {\r\n            \"Value\": \"541\",\r\n            \"Description\": \"OTROSPTOS.DEITALIA\"\r\n        },\r\n        {\r\n            \"Value\": \"542\",\r\n            \"Description\": \"GENOVA\"\r\n        },\r\n        {\r\n            \"Value\": \"543\",\r\n            \"Description\": \"LIORNA,LIVORNO\"\r\n        },\r\n        {\r\n            \"Value\": \"544\",\r\n            \"Description\": \"NAPOLES\"\r\n        },\r\n        {\r\n            \"Value\": \"545\",\r\n            \"Description\": \"SALERNO\"\r\n        },\r\n        {\r\n            \"Value\": \"546\",\r\n            \"Description\": \"AUGUSTA\"\r\n        },\r\n        {\r\n            \"Value\": \"547\",\r\n            \"Description\": \"SAVONA\"\r\n        },\r\n        {\r\n            \"Value\": \"551\",\r\n            \"Description\": \"OTROSPTOS.FRANCIA\"\r\n        },\r\n        {\r\n            \"Value\": \"552\",\r\n            \"Description\": \"LAPALLICE\"\r\n        },\r\n        {\r\n            \"Value\": \"553\",\r\n            \"Description\": \"LEHAVRE\"\r\n        },\r\n        {\r\n            \"Value\": \"554\",\r\n            \"Description\": \"MARSELLA\"\r\n        },\r\n        {\r\n            \"Value\": \"555\",\r\n            \"Description\": \"BURDEOS\"\r\n        },\r\n        {\r\n            \"Value\": \"556\",\r\n            \"Description\": \"CALAIS\"\r\n        },\r\n        {\r\n            \"Value\": \"557\",\r\n            \"Description\": \"BREST\"\r\n        },\r\n        {\r\n            \"Value\": \"558\",\r\n            \"Description\": \"RUAN\"\r\n        },\r\n        {\r\n            \"Value\": \"561\",\r\n            \"Description\": \"OTROSPTOS.ESPANA\"\r\n        },\r\n        {\r\n            \"Value\": \"562\",\r\n            \"Description\": \"CADIZ\"\r\n        },\r\n        {\r\n            \"Value\": \"563\",\r\n            \"Description\": \"BARCELONA\"\r\n        },\r\n        {\r\n            \"Value\": \"564\",\r\n            \"Description\": \"BILBAO\"\r\n        },\r\n        {\r\n            \"Value\": \"565\",\r\n            \"Description\": \"HUELVA\"\r\n        },\r\n        {\r\n            \"Value\": \"566\",\r\n            \"Description\": \"SEVILLA\"\r\n        },\r\n        {\r\n            \"Value\": \"567\",\r\n            \"Description\": \"TARRAGONA\"\r\n        },\r\n        {\r\n            \"Value\": \"568\",\r\n            \"Description\": \"ALGECIRAS\"\r\n        },\r\n        {\r\n            \"Value\": \"569\",\r\n            \"Description\": \"VALENCIA\"\r\n        },\r\n        {\r\n            \"Value\": \"571\",\r\n            \"Description\": \"LIVERPOOL\"\r\n        },\r\n        {\r\n            \"Value\": \"572\",\r\n            \"Description\": \"LONDRES\"\r\n        },\r\n        {\r\n            \"Value\": \"573\",\r\n            \"Description\": \"ROCHESTER\"\r\n        },\r\n        {\r\n            \"Value\": \"574\",\r\n            \"Description\": \"ETENSALVERRY\"\r\n        },\r\n        {\r\n            \"Value\": \"576\",\r\n            \"Description\": \"OTROSPTOS.INGLATERR\"\r\n        },\r\n        {\r\n            \"Value\": \"577\",\r\n            \"Description\": \"DOVER\"\r\n        },\r\n        {\r\n            \"Value\": \"578\",\r\n            \"Description\": \"PLYMOUTH\"\r\n        },\r\n        {\r\n            \"Value\": \"581\",\r\n            \"Description\": \"HELSINKI\"\r\n        },\r\n        {\r\n            \"Value\": \"582\",\r\n            \"Description\": \"OTROSPTOS.FINLANDIA\"\r\n        },\r\n        {\r\n            \"Value\": \"583\",\r\n            \"Description\": \"HANKO\"\r\n        },\r\n        {\r\n            \"Value\": \"584\",\r\n            \"Description\": \"KEMI\"\r\n        },\r\n        {\r\n            \"Value\": \"585\",\r\n            \"Description\": \"KOKKOLA\"\r\n        },\r\n        {\r\n            \"Value\": \"586\",\r\n            \"Description\": \"KOTKA\"\r\n        },\r\n        {\r\n            \"Value\": \"587\",\r\n            \"Description\": \"OULO\"\r\n        },\r\n        {\r\n            \"Value\": \"588\",\r\n            \"Description\": \"PIETARSAARI\"\r\n        },\r\n        {\r\n            \"Value\": \"589\",\r\n            \"Description\": \"PORI\"\r\n        },\r\n        {\r\n            \"Value\": \"591\",\r\n            \"Description\": \"BREMEN\"\r\n        },\r\n        {\r\n            \"Value\": \"592\",\r\n            \"Description\": \"HAMBURGO\"\r\n        },\r\n        {\r\n            \"Value\": \"593\",\r\n            \"Description\": \"NUREMBERG\"\r\n        },\r\n        {\r\n            \"Value\": \"594\",\r\n            \"Description\": \"FRANKFURT\"\r\n        },\r\n        {\r\n            \"Value\": \"595\",\r\n            \"Description\": \"DUSSELDORF\"\r\n        },\r\n        {\r\n            \"Value\": \"596\",\r\n            \"Description\": \"OTROSPTOS.ALEMANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"597\",\r\n            \"Description\": \"CUXHAVEN\"\r\n        },\r\n        {\r\n            \"Value\": \"598\",\r\n            \"Description\": \"ROSTOCK\"\r\n        },\r\n        {\r\n            \"Value\": \"599\",\r\n            \"Description\": \"OLDENBURG\"\r\n        },\r\n        {\r\n            \"Value\": \"601\",\r\n            \"Description\": \"AMBERES\"\r\n        },\r\n        {\r\n            \"Value\": \"602\",\r\n            \"Description\": \"OTROSPTO.BELGICA\"\r\n        },\r\n        {\r\n            \"Value\": \"603\",\r\n            \"Description\": \"ZEEBRUGGE\"\r\n        },\r\n        {\r\n            \"Value\": \"604\",\r\n            \"Description\": \"GHENT\"\r\n        },\r\n        {\r\n            \"Value\": \"605\",\r\n            \"Description\": \"OOSTENDE\"\r\n        },\r\n        {\r\n            \"Value\": \"611\",\r\n            \"Description\": \"LISBOA\"\r\n        },\r\n        {\r\n            \"Value\": \"612\",\r\n            \"Description\": \"OTROSSPTOS.PORTUGAL\"\r\n        },\r\n        {\r\n            \"Value\": \"613\",\r\n            \"Description\": \"SETUBAL\"\r\n        },\r\n        {\r\n            \"Value\": \"621\",\r\n            \"Description\": \"AMSTERDAM\"\r\n        },\r\n        {\r\n            \"Value\": \"622\",\r\n            \"Description\": \"ROTTERDAM\"\r\n        },\r\n        {\r\n            \"Value\": \"623\",\r\n            \"Description\": \"OTROSPTOS.HOLANDA\"\r\n        },\r\n        {\r\n            \"Value\": \"631\",\r\n            \"Description\": \"GOTEMBURGO\"\r\n        },\r\n        {\r\n            \"Value\": \"632\",\r\n            \"Description\": \"OTROSPTOS.SUECIA\"\r\n        },\r\n        {\r\n            \"Value\": \"633\",\r\n            \"Description\": \"MALMO\"\r\n        },\r\n        {\r\n            \"Value\": \"634\",\r\n            \"Description\": \"HELSIMBORG\"\r\n        },\r\n        {\r\n            \"Value\": \"635\",\r\n            \"Description\": \"KALMAR\"\r\n        },\r\n        {\r\n            \"Value\": \"641\",\r\n            \"Description\": \"AARHUS\"\r\n        },\r\n        {\r\n            \"Value\": \"642\",\r\n            \"Description\": \"COPENHAGEN\"\r\n        },\r\n        {\r\n            \"Value\": \"643\",\r\n            \"Description\": \"OTROSPTOS.DINAMARCA\"\r\n        },\r\n        {\r\n            \"Value\": \"644\",\r\n            \"Description\": \"AALBORG\"\r\n        },\r\n        {\r\n            \"Value\": \"645\",\r\n            \"Description\": \"ODENSE\"\r\n        },\r\n        {\r\n            \"Value\": \"651\",\r\n            \"Description\": \"OSLO\"\r\n        },\r\n        {\r\n            \"Value\": \"652\",\r\n            \"Description\": \"OTROSPTO.NORUEGA\"\r\n        },\r\n        {\r\n            \"Value\": \"653\",\r\n            \"Description\": \"STAVANGER\"\r\n        },\r\n        {\r\n            \"Value\": \"699\",\r\n            \"Description\": \"OTROSPTOS.EUROPA\"\r\n        },\r\n        {\r\n            \"Value\": \"711\",\r\n            \"Description\": \"DURBAM\"\r\n        },\r\n        {\r\n            \"Value\": \"712\",\r\n            \"Description\": \"CIUDADDELCABO\"\r\n        },\r\n        {\r\n            \"Value\": \"713\",\r\n            \"Description\": \"OTROSPTO.SUDAFFRICA\"\r\n        },\r\n        {\r\n            \"Value\": \"714\",\r\n            \"Description\": \"SALDANHA\"\r\n        },\r\n        {\r\n            \"Value\": \"715\",\r\n            \"Description\": \"PORT-ELIZABETH\"\r\n        },\r\n        {\r\n            \"Value\": \"716\",\r\n            \"Description\": \"MOSSEL-BAY\"\r\n        },\r\n        {\r\n            \"Value\": \"717\",\r\n            \"Description\": \"EAST-LONDON\"\r\n        },\r\n        {\r\n            \"Value\": \"799\",\r\n            \"Description\": \"OTROSPTO.DEAFRICA\"\r\n        },\r\n        {\r\n            \"Value\": \"811\",\r\n            \"Description\": \"SIDNEY\"\r\n        },\r\n        {\r\n            \"Value\": \"812\",\r\n            \"Description\": \"FREMANTLE\"\r\n        },\r\n        {\r\n            \"Value\": \"813\",\r\n            \"Description\": \"OTROSPTOS.AUSTRALIA\"\r\n        },\r\n        {\r\n            \"Value\": \"814\",\r\n            \"Description\": \"ADELAIDA\"\r\n        },\r\n        {\r\n            \"Value\": \"815\",\r\n            \"Description\": \"DARWIN\"\r\n        },\r\n        {\r\n            \"Value\": \"816\",\r\n            \"Description\": \"GERALDTON\"\r\n        },\r\n        {\r\n            \"Value\": \"817\",\r\n            \"Description\": \"PUERTOCABOFROWARD\"\r\n        },\r\n        {\r\n            \"Value\": \"818\",\r\n            \"Description\": \"HUACHIPATO\"\r\n        },\r\n        {\r\n            \"Value\": \"819\",\r\n            \"Description\": \"ESCUADRON\"\r\n        },\r\n        {\r\n            \"Value\": \"820\",\r\n            \"Description\": \"TERQUIM\"\r\n        },\r\n        {\r\n            \"Value\": \"899\",\r\n            \"Description\": \"OTROSPTOS.OCEANIA\"\r\n        },\r\n        {\r\n            \"Value\": \"900\",\r\n            \"Description\": \"RANCHO,COMB.,LUBRIC.\"\r\n        },\r\n        {\r\n            \"Value\": \"901\",\r\n            \"Description\": \"ARICA\"\r\n        },\r\n        {\r\n            \"Value\": \"902\",\r\n            \"Description\": \"IQUIQUE\"\r\n        },\r\n        {\r\n            \"Value\": \"903\",\r\n            \"Description\": \"ANTOFAGASTA\"\r\n        },\r\n        {\r\n            \"Value\": \"904\",\r\n            \"Description\": \"COQUIMBO\"\r\n        },\r\n        {\r\n            \"Value\": \"905\",\r\n            \"Description\": \"VALPARAISO\"\r\n        },\r\n        {\r\n            \"Value\": \"906\",\r\n            \"Description\": \"SANANTONIO\"\r\n        },\r\n        {\r\n            \"Value\": \"907\",\r\n            \"Description\": \"TALCAHUANO\"\r\n        },\r\n        {\r\n            \"Value\": \"908\",\r\n            \"Description\": \"SANVICENTE\"\r\n        },\r\n        {\r\n            \"Value\": \"909\",\r\n            \"Description\": \"LIRQUEN\"\r\n        },\r\n        {\r\n            \"Value\": \"910\",\r\n            \"Description\": \"PUERTOMONTT\"\r\n        },\r\n        {\r\n            \"Value\": \"911\",\r\n            \"Description\": \"CHACABUCO/PTO.AYSEN\"\r\n        },\r\n        {\r\n            \"Value\": \"912\",\r\n            \"Description\": \"PUNTAARENAS\"\r\n        },\r\n        {\r\n            \"Value\": \"913\",\r\n            \"Description\": \"PATILLOS\"\r\n        },\r\n        {\r\n            \"Value\": \"914\",\r\n            \"Description\": \"TOCOPILLA\"\r\n        },\r\n        {\r\n            \"Value\": \"915\",\r\n            \"Description\": \"MEJILLONES\"\r\n        },\r\n        {\r\n            \"Value\": \"916\",\r\n            \"Description\": \"TALTAL\"\r\n        },\r\n        {\r\n            \"Value\": \"917\",\r\n            \"Description\": \"CHANARAL/BARQUITO\"\r\n        },\r\n        {\r\n            \"Value\": \"918\",\r\n            \"Description\": \"CALDERA\"\r\n        },\r\n        {\r\n            \"Value\": \"919\",\r\n            \"Description\": \"CALDERILLA\"\r\n        },\r\n        {\r\n            \"Value\": \"920\",\r\n            \"Description\": \"HUASCO/GUACOLDA\"\r\n        },\r\n        {\r\n            \"Value\": \"921\",\r\n            \"Description\": \"QUINTERO\"\r\n        },\r\n        {\r\n            \"Value\": \"922\",\r\n            \"Description\": \"JUANFERNANDEZ\"\r\n        },\r\n        {\r\n            \"Value\": \"923\",\r\n            \"Description\": \"CONSTITUCION\"\r\n        },\r\n        {\r\n            \"Value\": \"924\",\r\n            \"Description\": \"TOME\"\r\n        },\r\n        {\r\n            \"Value\": \"925\",\r\n            \"Description\": \"PENCO\"\r\n        },\r\n        {\r\n            \"Value\": \"926\",\r\n            \"Description\": \"CORONEL\"\r\n        },\r\n        {\r\n            \"Value\": \"927\",\r\n            \"Description\": \"LOTA\"\r\n        },\r\n        {\r\n            \"Value\": \"928\",\r\n            \"Description\": \"LEBU\"\r\n        },\r\n        {\r\n            \"Value\": \"929\",\r\n            \"Description\": \"ISLADEPASCUA\"\r\n        },\r\n        {\r\n            \"Value\": \"930\",\r\n            \"Description\": \"CORRAL\"\r\n        },\r\n        {\r\n            \"Value\": \"931\",\r\n            \"Description\": \"ANCUD\"\r\n        },\r\n        {\r\n            \"Value\": \"932\",\r\n            \"Description\": \"CASTRO\"\r\n        },\r\n        {\r\n            \"Value\": \"933\",\r\n            \"Description\": \"QUELLON\"\r\n        },\r\n        {\r\n            \"Value\": \"934\",\r\n            \"Description\": \"CHAITEN\"\r\n        },\r\n        {\r\n            \"Value\": \"935\",\r\n            \"Description\": \"TORTEL\"\r\n        },\r\n        {\r\n            \"Value\": \"936\",\r\n            \"Description\": \"NATALES\"\r\n        },\r\n        {\r\n            \"Value\": \"937\",\r\n            \"Description\": \"GUARELLO\"\r\n        },\r\n        {\r\n            \"Value\": \"938\",\r\n            \"Description\": \"PUERTOANDINO\"\r\n        },\r\n        {\r\n            \"Value\": \"939\",\r\n            \"Description\": \"PERCY\"\r\n        },\r\n        {\r\n            \"Value\": \"940\",\r\n            \"Description\": \"CLARENCIA\"\r\n        },\r\n        {\r\n            \"Value\": \"941\",\r\n            \"Description\": \"GREGORIO\"\r\n        },\r\n        {\r\n            \"Value\": \"942\",\r\n            \"Description\": \"CABONEGRO\"\r\n        },\r\n        {\r\n            \"Value\": \"943\",\r\n            \"Description\": \"PUERTOWILLIAMS\"\r\n        },\r\n        {\r\n            \"Value\": \"944\",\r\n            \"Description\": \"TER.ANTARTICOCHILEN\"\r\n        },\r\n        {\r\n            \"Value\": \"945\",\r\n            \"Description\": \"AEROP.CARRIELSUR\"\r\n        },\r\n        {\r\n            \"Value\": \"946\",\r\n            \"Description\": \"GUAYACAN\"\r\n        },\r\n        {\r\n            \"Value\": \"947\",\r\n            \"Description\": \"PASOPEHUENCHE\"\r\n        },\r\n        {\r\n            \"Value\": \"948\",\r\n            \"Description\": \"VENTANAS\"\r\n        },\r\n        {\r\n            \"Value\": \"949\",\r\n            \"Description\": \"PINOHACHADO(LIUCURA\"\r\n        },\r\n        {\r\n            \"Value\": \"950\",\r\n            \"Description\": \"CALETACOLOSO\"\r\n        },\r\n        {\r\n            \"Value\": \"951\",\r\n            \"Description\": \"AGUASNEGRAS\"\r\n        },\r\n        {\r\n            \"Value\": \"952\",\r\n            \"Description\": \"ZONAFRANCAIQUIQUE\"\r\n        },\r\n        {\r\n            \"Value\": \"953\",\r\n            \"Description\": \"ZONAFRANCAPTAAREN\"\r\n        },\r\n        {\r\n            \"Value\": \"954\",\r\n            \"Description\": \"RIOMAYER\"\r\n        },\r\n        {\r\n            \"Value\": \"955\",\r\n            \"Description\": \"RIOMOSCO\"\r\n        },\r\n        {\r\n            \"Value\": \"956\",\r\n            \"Description\": \"VISVIRI\"\r\n        },\r\n        {\r\n            \"Value\": \"957\",\r\n            \"Description\": \"CHACALLUTA\"\r\n        },\r\n        {\r\n            \"Value\": \"958\",\r\n            \"Description\": \"CHUNGARA\"\r\n        },\r\n        {\r\n            \"Value\": \"959\",\r\n            \"Description\": \"COLCHANE\"\r\n        },\r\n        {\r\n            \"Value\": \"960\",\r\n            \"Description\": \"ABRADENAPA\"\r\n        },\r\n        {\r\n            \"Value\": \"961\",\r\n            \"Description\": \"OLLAGUE\"\r\n        },\r\n        {\r\n            \"Value\": \"962\",\r\n            \"Description\": \"SANPEDRODEATACAMA\"\r\n        },\r\n        {\r\n            \"Value\": \"963\",\r\n            \"Description\": \"SOCOMPA\"\r\n        },\r\n        {\r\n            \"Value\": \"964\",\r\n            \"Description\": \"SANFRANCISCO\"\r\n        },\r\n        {\r\n            \"Value\": \"965\",\r\n            \"Description\": \"LOSLIBERTADORES\"\r\n        },\r\n        {\r\n            \"Value\": \"966\",\r\n            \"Description\": \"MAHUILMALAL\"\r\n        },\r\n        {\r\n            \"Value\": \"967\",\r\n            \"Description\": \"CARDENALSAMORE\"\r\n        },\r\n        {\r\n            \"Value\": \"968\",\r\n            \"Description\": \"PEREZROSALES\"\r\n        },\r\n        {\r\n            \"Value\": \"969\",\r\n            \"Description\": \"FUTALEUFU\"\r\n        },\r\n        {\r\n            \"Value\": \"970\",\r\n            \"Description\": \"PALENA-CARRENLEUFU\"\r\n        },\r\n        {\r\n            \"Value\": \"971\",\r\n            \"Description\": \"PANGUIPULLI\"\r\n        },\r\n        {\r\n            \"Value\": \"972\",\r\n            \"Description\": \"HUAHUM\"\r\n        },\r\n        {\r\n            \"Value\": \"973\",\r\n            \"Description\": \"LAGOVERDE\"\r\n        },\r\n        {\r\n            \"Value\": \"974\",\r\n            \"Description\": \"APPELEG\"\r\n        },\r\n        {\r\n            \"Value\": \"975\",\r\n            \"Description\": \"PAMPAALTA\"\r\n        },\r\n        {\r\n            \"Value\": \"976\",\r\n            \"Description\": \"HUEMULES\"\r\n        },\r\n        {\r\n            \"Value\": \"977\",\r\n            \"Description\": \"CHILECHICO\"\r\n        },\r\n        {\r\n            \"Value\": \"978\",\r\n            \"Description\": \"BAKER\"\r\n        },\r\n        {\r\n            \"Value\": \"979\",\r\n            \"Description\": \"DOROTEA\"\r\n        },\r\n        {\r\n            \"Value\": \"980\",\r\n            \"Description\": \"CASASVIEJAS\"\r\n        },\r\n        {\r\n            \"Value\": \"981\",\r\n            \"Description\": \"MONTEAYMOND\"\r\n        },\r\n        {\r\n            \"Value\": \"982\",\r\n            \"Description\": \"SANSEBASTIAN\"\r\n        },\r\n        {\r\n            \"Value\": \"983\",\r\n            \"Description\": \"COYHAIQUEALTO\"\r\n        },\r\n        {\r\n            \"Value\": \"984\",\r\n            \"Description\": \"TRIANA\"\r\n        },\r\n        {\r\n            \"Value\": \"985\",\r\n            \"Description\": \"IBANEZPALAVICINI\"\r\n        },\r\n        {\r\n            \"Value\": \"986\",\r\n            \"Description\": \"VILLAOHIGGINS\"\r\n        },\r\n        {\r\n            \"Value\": \"987\",\r\n            \"Description\": \"AEROP.CHACALLUTA\"\r\n        },\r\n        {\r\n            \"Value\": \"988\",\r\n            \"Description\": \"AEROP.DIEGOARACENA\"\r\n        },\r\n        {\r\n            \"Value\": \"989\",\r\n            \"Description\": \"AEROP.CERROMORENO\"\r\n        },\r\n        {\r\n            \"Value\": \"990\",\r\n            \"Description\": \"AEROP.ELTEPUAL\"\r\n        },\r\n        {\r\n            \"Value\": \"991\",\r\n            \"Description\": \"AEROP.C.I.DELCAMPO\"\r\n        },\r\n        {\r\n            \"Value\": \"992\",\r\n            \"Description\": \"AEROP.A.M.BENITEZ\"\r\n        },\r\n        {\r\n            \"Value\": \"994\",\r\n            \"Description\": \"ARICA-TACNA\"\r\n        },\r\n        {\r\n            \"Value\": \"995\",\r\n            \"Description\": \"ARICA-LAPAZ\"\r\n        },\r\n        {\r\n            \"Value\": \"997\",\r\n            \"Description\": \"OTROSPTOS.CHILENOS\"\r\n        },\r\n        {\r\n            \"Value\": \"998\",\r\n            \"Description\": \"PASOJAMA\"\r\n        },\r\n        {\r\n            \"Value\": \"999\",\r\n            \"Description\": \"GNLMEJILLONES\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_ViaTrans OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_ViaTrans\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 10,\r\n    \"Description\": \"Via de Transporte\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 29,\r\n    \"EditSize\": 10,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"1\",\r\n            \"Description\": \"MARITIMA, FLUVIAL Y LACUSTRE\"\r\n        },\r\n        {\r\n            \"Value\": \"10\",\r\n            \"Description\": \"OTRA\"\r\n        },\r\n        {\r\n            \"Value\": \"11\",\r\n            \"Description\": \"COURIER/AEREO\"\r\n        },\r\n        {\r\n            \"Value\": \"4\",\r\n            \"Description\": \"AEREO\"\r\n        },\r\n        {\r\n            \"Value\": \"5\",\r\n            \"Description\": \"POSTAL\"\r\n        },\r\n        {\r\n            \"Value\": \"6\",\r\n            \"Description\": \"FERROVIARIO\"\r\n        },\r\n        {\r\n            \"Value\": \"7\",\r\n            \"Description\": \"CARRETERO/TERRESTRE\"\r\n        },\r\n        {\r\n            \"Value\": \"8\",\r\n            \"Description\": \"OLEODUCTOS, GASODUCTOS\"\r\n        },\r\n        {\r\n            \"Value\": \"9\",\r\n            \"Description\": \"TENDIDO ELECTRICO (AEREO,SUBT)\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_TransNom OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_TransNom\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 40,\r\n    \"Description\": \"Nombre de Transportista\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 59,\r\n    \"EditSize\": 40,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RUTTrans OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_RUTTrans\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 10,\r\n    \"Description\": \"RUT de Transportista\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 59,\r\n    \"EditSize\": 10,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_NombreChofer OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_NombreChofer\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 30,\r\n    \"Description\": \"Nombre de Chofer\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 59,\r\n    \"EditSize\": 30,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_RUTChofer OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_RUTChofer\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 10,\r\n    \"Description\": \"RUT de Chofer\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 59,\r\n    \"EditSize\": 10,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_Patente OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_Patente\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 8,\r\n    \"Description\": \"Patente\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 59,\r\n    \"EditSize\": 8,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_TpoMoneda OINV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"SCGCE_TpoMoneda\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 20,\r\n    \"Description\": \"Tipo Moneda\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"OINV\",\r\n    \"FieldID\": 28,\r\n    \"EditSize\": 20,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": \"PESO AR\",\r\n            \"Description\": \"PESO AR\"\r\n        },\r\n        {\r\n            \"Value\": \"LIBRA EST\",\r\n            \"Description\": \"LIBRA EST\"\r\n        },\r\n        {\r\n            \"Value\": \"CORONA SC\",\r\n            \"Description\": \"CORONA SC\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR HK\",\r\n            \"Description\": \"DOLAR HK\"\r\n        },\r\n        {\r\n            \"Value\": \"RAND\",\r\n            \"Description\": \"RAND\"\r\n        },\r\n        {\r\n            \"Value\": \"PESO CO\",\r\n            \"Description\": \"PESO CO\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR USA\",\r\n            \"Description\": \"DOLAR USA\"\r\n        },\r\n        {\r\n            \"Value\": \"PESO MX\",\r\n            \"Description\": \"PESO MX\"\r\n        },\r\n        {\r\n            \"Value\": \"BOLIVAR\",\r\n            \"Description\": \"BOLIVAR\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR SIN\",\r\n            \"Description\": \"DOLAR SIN\"\r\n        },\r\n        {\r\n            \"Value\": \"RUPIA IN\",\r\n            \"Description\": \"RUPIA IN\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR TAI\",\r\n            \"Description\": \"DOLAR TAI\"\r\n        },\r\n        {\r\n            \"Value\": \"DIRHAM\",\r\n            \"Description\": \"DIRHAM\"\r\n        },\r\n        {\r\n            \"Value\": \"WON KR\",\r\n            \"Description\": \"WON KR\"\r\n        },\r\n        {\r\n            \"Value\": \"ZLOTY PL\",\r\n            \"Description\": \"ZLOTY PL\"\r\n        },\r\n        {\r\n            \"Value\": \"EURO\",\r\n            \"Description\": \"EURO\"\r\n        },\r\n        {\r\n            \"Value\": \"CORONA CZ\",\r\n            \"Description\": \"CORONA CZ\"\r\n        },\r\n        {\r\n            \"Value\": \"FORINT HU\",\r\n            \"Description\": \"FORINT HU\"\r\n        },\r\n        {\r\n            \"Value\": \"BAHT TH\",\r\n            \"Description\": \"BAHT TH\"\r\n        },\r\n        {\r\n            \"Value\": \"LIRA TR\",\r\n            \"Description\": \"LIRA TR\"\r\n        },\r\n        {\r\n            \"Value\": \"RINGGIT MY\",\r\n            \"Description\": \"RINGGIT MY\"\r\n        },\r\n        {\r\n            \"Value\": \"RUBLO RU\",\r\n            \"Description\": \"RUBLO RU\"\r\n        },\r\n        {\r\n            \"Value\": \"RUPIA ID\",\r\n            \"Description\": \"RUPIA ID\"\r\n        },\r\n        {\r\n            \"Value\": \"HRYVNIA UA\",\r\n            \"Description\": \"HRYVNIA UA\"\r\n        },\r\n        {\r\n            \"Value\": \"SHEKEL IL\",\r\n            \"Description\": \"SHEKEL IL\"\r\n        },\r\n        {\r\n            \"Value\": \"PESO PH\",\r\n            \"Description\": \"PESO PH\"\r\n        },\r\n        {\r\n            \"Value\": \"RIYAL SA\",\r\n            \"Description\": \"RIYAL SA\"\r\n        },\r\n        {\r\n            \"Value\": \"RUPIA PK\",\r\n            \"Description\": \"RUPIA PK\"\r\n        },\r\n        {\r\n            \"Value\": \"DONG VN\",\r\n            \"Description\": \"DONG VN\"\r\n        },\r\n        {\r\n            \"Value\": \"LIBRA EG\",\r\n            \"Description\": \"LIBRA EG\"\r\n        },\r\n        {\r\n            \"Value\": \"LEU RO\",\r\n            \"Description\": \"LEU RO\"\r\n        },\r\n        {\r\n            \"Value\": \"CORONA IS\",\r\n            \"Description\": \"CORONA IS\"\r\n        },\r\n        {\r\n            \"Value\": \"RIAL IR\",\r\n            \"Description\": \"RIAL IR\"\r\n        },\r\n        {\r\n            \"Value\": \"COLON CR\",\r\n            \"Description\": \"COLON CR\"\r\n        },\r\n        {\r\n            \"Value\": \"BALBOA PA\",\r\n            \"Description\": \"BALBOA PA\"\r\n        },\r\n        {\r\n            \"Value\": \"PESO CL\",\r\n            \"Description\": \"PESO CL\"\r\n        },\r\n        {\r\n            \"Value\": \"GUARANI\",\r\n            \"Description\": \"GUARANI\"\r\n        },\r\n        {\r\n            \"Value\": \"NUEVO SOL\",\r\n            \"Description\": \"NUEVO SOL\"\r\n        },\r\n        {\r\n            \"Value\": \"PESO UY\",\r\n            \"Description\": \"PESO UY\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR AUST\",\r\n            \"Description\": \"DOLAR AUST\"\r\n        },\r\n        {\r\n            \"Value\": \"BOLIVIANO\",\r\n            \"Description\": \"BOLIVIANO\"\r\n        },\r\n        {\r\n            \"Value\": \"YUAN CN\",\r\n            \"Description\": \"YUAN CN\"\r\n        },\r\n        {\r\n            \"Value\": \"REAL BR\",\r\n            \"Description\": \"REAL BR\"\r\n        },\r\n        {\r\n            \"Value\": \"CORONA DIN\",\r\n            \"Description\": \"CORONA DIN\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR CAN\",\r\n            \"Description\": \"DOLAR CAN\"\r\n        },\r\n        {\r\n            \"Value\": \"YEN\",\r\n            \"Description\": \"YEN\"\r\n        },\r\n        {\r\n            \"Value\": \"FRANCO SZ\",\r\n            \"Description\": \"FRANCO SZ\"\r\n        },\r\n        {\r\n            \"Value\": \"OTRAS MONEDAS\",\r\n            \"Description\": \"OTRAS MONEDAS\"\r\n        },\r\n        {\r\n            \"Value\": \"CORONA NOR\",\r\n            \"Description\": \"CORONA NOR\"\r\n        },\r\n        {\r\n            \"Value\": \"DOLAR NZ\",\r\n            \"Description\": \"DOLAR NZ\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_IndExe INV1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_IndExe\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 1,\r\n         \"Description\": \"Indicador de Fac Exenta\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"INV1\",\r\n         \"FieldID\": 0,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"Exento de IVA\"\r\n            },\r\n            {\r\n               \"Value\": \"2\",\r\n               \"Description\": \"No Facturable\"\r\n            },\r\n            {\r\n               \"Value\": \"3\",\r\n               \"Description\": \"Garantía de depósito por envases\"\r\n            },\r\n            {\r\n               \"Value\": \"4\",\r\n               \"Description\": \"No Venta\"\r\n            },\r\n            {\r\n               \"Value\": \"5\",\r\n               \"Description\": \"A Rebajar\"\r\n            },\r\n            {\r\n               \"Value\": \"6\",\r\n               \"Description\": \"No Facturable Negativo\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_EnviaTranf OWTR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_EnviaTranf\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 1,\r\n         \"Description\": \"Enviar Tranferencia Electronica\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OWTR\",\r\n         \"FieldID\": 20,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"Y\",\r\n               \"Description\": \"Sí\"\r\n            },\r\n            {\r\n               \"Value\": \"N\",\r\n               \"Description\": \"No\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_TipoDesp OWTR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_TipoDesp\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 1,\r\n         \"Description\": \"Tipo de despacho\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OWTR\",\r\n         \"FieldID\": 21,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"Despacho por cuenta del receptor\"\r\n            },\r\n            {\r\n               \"Value\": \"2\",\r\n               \"Description\": \"Despacho por cuenta del emisor a instalaciones del cliente\"\r\n            },\r\n            {\r\n               \"Value\": \"3\",\r\n               \"Description\": \"Despacho por cuenta del emisor a otras instalaciones\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_IndTraslado OWTR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_IndTraslado\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 1,\r\n         \"Description\": \"Indicador de Traslado\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OWTR\",\r\n         \"FieldID\": 22,\r\n         \"EditSize\": 1,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"1\",\r\n               \"Description\": \"Operación constituye venta\"\r\n            },\r\n            {\r\n               \"Value\": \"2\",\r\n               \"Description\": \"Ventas por efectuar\"\r\n            },\r\n            {\r\n               \"Value\": \"3\",\r\n               \"Description\": \"Consignaciones\"\r\n            },\r\n            {\r\n               \"Value\": \"4\",\r\n               \"Description\": \"Entrega gratuita\"\r\n            },\r\n            {\r\n               \"Value\": \"5\",\r\n               \"Description\": \"Traslados internos\"\r\n            },\r\n            {\r\n               \"Value\": \"6\",\r\n               \"Description\": \"Otros traslados no venta\"\r\n            },\r\n            {\r\n               \"Value\": \"7\",\r\n               \"Description\": \"Guia de devolución\"\r\n            },\r\n            {\r\n               \"Value\": \"8\",\r\n               \"Description\": \"Traslado para exportación\"\r\n            },\r\n            {\r\n               \"Value\": \"9\",\r\n               \"Description\": \"Venta para exportación\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_GiroNeg OCRD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_GiroNeg\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 100,\r\n         \"Description\": \"Giro de Negocio\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"ACRD\",\r\n         \"FieldID\": 7,\r\n         \"EditSize\": 100,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": []\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF SCGCE_TipSN OCRD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"Name\": \"SCGCE_TipSN\",\r\n         \"Type\": \"db_Alpha\",\r\n         \"Size\": 2,\r\n         \"Description\": \"CE - Tipo de SN\",\r\n         \"SubType\": \"st_None\",\r\n         \"LinkedTable\": null,\r\n         \"DefaultValue\": null,\r\n         \"TableName\": \"OCRD\",\r\n         \"FieldID\": 0,\r\n         \"EditSize\": 2,\r\n         \"Mandatory\": \"tNO\",\r\n         \"LinkedUDO\": null,\r\n         \"LinkedSystemObject\": null,\r\n         \"ValidValuesMD\": [\r\n            {\r\n               \"Value\": \"01\",\r\n               \"Description\": \"Cédula Física\"\r\n            },\r\n            {\r\n               \"Value\": \"02\",\r\n               \"Description\": \"Cédula Jurídica\"\r\n            },\r\n            {\r\n               \"Value\": \"03\",\r\n               \"Description\": \"DIMEX\"\r\n            },\r\n            {\r\n               \"Value\": \"04\",\r\n               \"Description\": \"NITE\"\r\n            }\r\n         ]\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField1 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField1\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 1\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 4,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField2 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField2\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 2\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 5,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField3 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField3\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 3\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 6,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField4 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField4\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 4\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 7,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField5 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField5\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 5\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 8,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField6 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField6\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 6\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 9,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField7 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField7\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 7\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 10,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField8 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField8\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 8\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 11,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField9 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField9\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 9\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 12,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDF CommField10 SCGCE_CONFS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"CommField10\",\r\n    \"Type\": \"db_Alpha\",\r\n    \"Size\": 50,\r\n    \"Description\": \"Campo de comentarios 10\",\r\n    \"SubType\": \"st_None\",\r\n    \"LinkedTable\": null,\r\n    \"DefaultValue\": null,\r\n    \"TableName\": \"@SCGCE_CONFS\",\r\n    \"FieldID\": 13,\r\n    \"EditSize\": 50,\r\n    \"Mandatory\": \"tNO\",\r\n    \"LinkedUDO\": null,\r\n    \"LinkedSystemObject\": null,\r\n    \"ValidValuesMD\": [\r\n        {\r\n            \"Value\": null,\r\n            \"Description\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserFieldsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserFieldsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDO SCGCE_CONF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"TableName\": \"SCGCE_CONF\",\r\n\t\"Code\": \"SCGCE_CONF\",\r\n\t\"LogTableName\": null,\r\n\t\"CanCreateDefaultForm\": \"tNO\",\r\n\t\"ObjectType\": \"boud_MasterData\",\r\n\t\"ExtensionName\": null,\r\n\t\"CanCancel\": \"tNO\",\r\n\t\"CanDelete\": \"tYES\",\r\n\t\"CanLog\": \"tNO\",\r\n\t\"ManageSeries\": \"tNO\",\r\n\t\"CanFind\": \"tNO\",\r\n\t\"CanYearTransfer\": \"tNO\",\r\n\t\"Name\": \"Configuración de Series\",\r\n\t\"CanClose\": \"tNO\",\r\n\t\"OverwriteDllfile\": \"tYES\",\r\n\t\"UseUniqueFormType\": \"tYES\",\r\n\t\"CanArchive\": \"tNO\",\r\n\t\"MenuItem\": \"tNO\",\r\n\t\"MenuCaption\": \"\",\r\n\t\"FatherMenuID\": null,\r\n\t\"Position\": null,\r\n\t\"MenuUID\": null,\r\n\t\"EnableEnhancedForm\": \"tYES\",\r\n\t\"RebuildEnhancedForm\": \"tYES\",\r\n\t\"FormSRF\": null,\r\n\t\"UserObjectMD_ChildTables\": [\r\n\t\t{\r\n\t\t\t\"SonNumber\": 1,\r\n\t\t\t\"TableName\": \"SCGCE_CONFS\",\r\n\t\t\t\"LogTableName\": null,\r\n\t\t\t\"Code\": \"SCGCE_CONF\",\r\n\t\t\t\"ObjectName\": \"SCGCE_CONFS\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"SonNumber\": 2,\r\n\t\t\t\"TableName\": \"SCGCE_ACT\",\r\n\t\t\t\"LogTableName\": null,\r\n\t\t\t\"Code\": \"SCGCE_CONF\",\r\n\t\t\t\"ObjectName\": \"SCGCE_ACT\"\r\n\t\t}\r\n\t],\r\n\t\"UserObjectMD_FindColumns\": [],\r\n\t\"UserObjectMD_FormColumns\": [],\r\n\t\"UserObjectMD_EnhancedFormColumns\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserObjectsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserObjectsMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UDO SCGCE_ORFE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Code\": \"SCGCE_ORFE\",\r\n    \"Name\": \"Referencias de documento\",\r\n    \"TableName\": \"SCGCE_ORFE\",\r\n    \"LogTableName\": \"ASCGCE_ORFE\",\r\n    \"ObjectType\": \"boud_Document\",\r\n    \"ManageSeries\": \"tNO\",\r\n    \"CanDelete\": \"tYES\",\r\n    \"CanClose\": \"tNO\",\r\n    \"CanCancel\": \"tNO\",\r\n    \"ExtensionName\": null,\r\n    \"CanFind\": \"tNO\",\r\n    \"CanYearTransfer\": \"tNO\",\r\n    \"CanCreateDefaultForm\": \"tNO\",\r\n    \"CanLog\": \"tYES\",\r\n    \"OverwriteDllfile\": \"tNO\",\r\n    \"UseUniqueFormType\": \"tYES\",\r\n    \"CanArchive\": \"tNO\",\r\n    \"MenuItem\": \"tNO\",\r\n    \"MenuCaption\": \"\",\r\n    \"FatherMenuID\": null,\r\n    \"Position\": null,\r\n    \"EnableEnhancedForm\": \"tYES\",\r\n    \"RebuildEnhancedForm\": \"tYES\",\r\n    \"FormSRF\": null,\r\n    \"MenuUID\": \"SCGCE_ORFE\",\r\n    \"UserObjectMD_ChildTables\": [\r\n        {\r\n            \"Code\": \"SCGCE_ORFE\",\r\n            \"SonNumber\": \"1\",\r\n            \"TableName\": \"SCGCE_RFE1\",\r\n            \"LogTableName\": \"ASCGCE_RFE1\",\r\n            \"ObjectName\": \"SCGCE_RFE1\"\r\n        }\r\n    ],\r\n    \"UserObjectMD_FindColumns\": [],\r\n    \"UserObjectMD_FormColumns\": [],\r\n    \"UserObjectMD_EnhancedFormColumns\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10.114.1.4:50000/b1s/v1/UserObjectsMD",
+					"protocol": "https",
+					"host": [
+						"10",
+						"114",
+						"1",
+						"4"
+					],
+					"port": "50000",
+					"path": [
+						"b1s",
+						"v1",
+						"UserObjectsMD"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
